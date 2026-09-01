@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/travisdchamness1/tech-trends/schemas/run.schema.json",
+  "title": "Technology Trends immutable run record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "timezone", "run_id", "scheduled_for", "observed_at", "window_start", "window_end", "status", "report_path", "methodology", "provenance", "findings", "category_assessments"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "technology_trend_run"},
+    "timezone": {"const": "America/Los_Angeles"},
+    "run_id": {"type": "string", "pattern": "^technology-trends-[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "scheduled_for": {"type": "string", "format": "date-time"},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "window_start": {"type": "string", "format": "date-time"},
+    "window_end": {"type": "string", "format": "date-time"},
+    "status": {"const": "success"},
+    "report_path": {"type": "string", "pattern": "^reports/[0-9]{4}/[0-9]{4}-[0-9]{2}-[0-9]{2}/technology-trend-update-technology-trends-[0-9]{4}-[0-9]{2}-[0-9]{2}\\.html$"},
+    "methodology": {"$ref": "#/$defs/methodology"},
+    "provenance": {"$ref": "#/$defs/provenance"},
+    "findings": {"type": "array", "minItems": 1, "maxItems": 5, "items": {"$ref": "#/$defs/finding"}},
+    "category_assessments": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {"$ref": "#/$defs/category_assessment"},
+      "allOf": [
+        {"contains": {"properties": {"category_id": {"const": "ai-computing"}}, "required": ["category_id"]}, "minContains": 1, "maxContains": 1},
+        {"contains": {"properties": {"category_id": {"const": "aerospace-space"}}, "required": ["category_id"]}, "minContains": 1, "maxContains": 1},
+        {"contains": {"properties": {"category_id": {"const": "robotics-autonomy"}}, "required": ["category_id"]}, "minContains": 1, "maxContains": 1},
+        {"contains": {"properties": {"category_id": {"const": "advanced-manufacturing"}}, "required": ["category_id"]}, "minContains": 1, "maxContains": 1},
+        {"contains": {"properties": {"category_id": {"const": "energy"}}, "required": ["category_id"]}, "minContains": 1, "maxContains": 1},
+        {"contains": {"properties": {"category_id": {"const": "transportation"}}, "required": ["category_id"]}, "minContains": 1, "maxContains": 1},
+        {"contains": {"properties": {"category_id": {"const": "biotech"}}, "required": ["category_id"]}, "minContains": 1, "maxContains": 1},
+        {"contains": {"properties": {"category_id": {"const": "enabling-infrastructure"}}, "required": ["category_id"]}, "minContains": 1, "maxContains": 1}
+      ]
+    }
+  },
+  "$defs": {
+    "methodology": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["finding_count", "observation_window_basis", "ranking_basis", "source_policy", "repeat_policy", "selection_focus", "excluded_noise"],
+      "properties": {
+        "finding_count": {"type": "integer", "minimum": 1, "maximum": 5},
+        "observation_window_basis": {"type": "string", "minLength": 1},
+        "ranking_basis": {"type": "string", "minLength": 1},
+        "source_policy": {"type": "string", "minLength": 1},
+        "repeat_policy": {"type": "string", "minLength": 1},
+        "selection_focus": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "excluded_noise": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "source", "imported_at", "notes"],
+      "properties": {
+        "kind": {"enum": ["live-run", "historical-import"]},
+        "source": {"type": "string", "minLength": 1},
+        "imported_at": {"type": ["string", "null"], "format": "date-time"},
+        "notes": {"type": ["string", "null"]}
+      }
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rank", "finding_id", "event_key", "headline", "summary", "why_it_matters", "trend_statement", "material_update_from", "source_links", "category_ids"],
+      "properties": {
+        "rank": {"type": "integer", "minimum": 1, "maximum": 5},
+        "finding_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "event_key": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "headline": {"type": "string", "minLength": 1},
+        "summary": {"type": "string", "minLength": 1},
+        "why_it_matters": {"type": "string", "minLength": 1},
+        "trend_statement": {"type": "string", "minLength": 1},
+        "material_update_from": {"type": ["string", "null"]},
+        "source_links": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/source_link"}},
+        "category_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/category_id"}}
+      }
+    },
+    "source_link": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "url", "source_type", "published_at"],
+      "properties": {
+        "title": {"type": "string", "minLength": 1},
+        "url": {"type": "string", "pattern": "^https?://"},
+        "source_type": {"type": "string", "minLength": 1},
+        "published_at": {"type": ["string", "null"], "format": "date"}
+      }
+    },
+    "category_id": {"enum": ["ai-computing", "aerospace-space", "robotics-autonomy", "advanced-manufacturing", "energy", "transportation", "biotech", "enabling-infrastructure"]},
+    "category_assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["category_id", "category_name", "direction", "velocity_score", "confidence", "evidence", "justification", "compared_to_run_id", "assessed_at"],
+      "properties": {
+        "category_id": {"$ref": "#/$defs/category_id"},
+        "category_name": {"type": "string", "minLength": 1},
+        "direction": {"enum": ["up", "down", "flat", "unknown"]},
+        "velocity_score": {"type": "integer", "minimum": -2, "maximum": 2},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}},
+        "justification": {"type": "string", "minLength": 1},
+        "compared_to_run_id": {"type": ["string", "null"]},
+        "assessed_at": {"type": "string", "format": "date-time"}
+      },
+      "allOf": [
+        {"if": {"properties": {"direction": {"const": "unknown"}}, "required": ["direction"]}, "then": {"properties": {"evidence": {"maxItems": 0}, "velocity_score": {"const": 0}}}},
+        {"if": {"properties": {"direction": {"enum": ["up", "down", "flat"]}}, "required": ["direction"]}, "then": {"properties": {"evidence": {"minItems": 1}}}}
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_summary", "finding_id", "source_url", "source_type", "published_at", "reference_run_id"],
+      "properties": {
+        "evidence_summary": {"type": "string", "minLength": 1},
+        "finding_id": {"type": ["string", "null"]},
+        "source_url": {"type": ["string", "null"], "pattern": "^https?://"},
+        "source_type": {"type": ["string", "null"]},
+        "published_at": {"type": ["string", "null"], "format": "date"},
+        "reference_run_id": {"type": ["string", "null"]}
+      },
+      "anyOf": [
+        {"properties": {"finding_id": {"type": "string"}}},
+        {"properties": {"source_url": {"type": "string"}}},
+        {"properties": {"reference_run_id": {"type": "string"}}}
+      ]
+    }
+  }
+}

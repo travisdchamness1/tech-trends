@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "categories": [
+    {"category_id": "ai-computing", "category_name": "AI and Computing"},
+    {"category_id": "aerospace-space", "category_name": "Aerospace and Space"},
+    {"category_id": "robotics-autonomy", "category_name": "Robotics and Autonomy"},
+    {"category_id": "advanced-manufacturing", "category_name": "Advanced Manufacturing"},
+    {"category_id": "energy", "category_name": "Energy"},
+    {"category_id": "transportation", "category_name": "Transportation"},
+    {"category_id": "biotech", "category_name": "Biotechnology"},
+    {"category_id": "enabling-infrastructure", "category_name": "Enabling Infrastructure"}
+  ]
+}

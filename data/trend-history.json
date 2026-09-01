@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "record_type": "technology_trend_history_index",
+  "timezone": "America/Los_Angeles",
+  "ledger_authority": "data/runs",
+  "created_at": "2026-09-01T07:40:00-07:00",
+  "updated_at": "2026-09-01T07:40:00-07:00",
+  "latest_successful_run_id": "technology-trends-2026-08-31",
+  "runs": [
+    {
+      "run_id": "technology-trends-2026-08-31",
+      "scheduled_for": "2026-08-31T08:00:00-07:00",
+      "observed_at": "2026-08-31T08:13:32-07:00",
+      "window_start": "2026-08-30T08:13:32-07:00",
+      "window_end": "2026-08-31T08:13:32-07:00",
+      "status": "success",
+      "run_record_path": "data/runs/2026/2026-08-31/technology-trends-2026-08-31.json",
+      "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html",
+      "finding_count": 5
+    }
+  ],
+  "finding_events": [
+    {"event_key": "humain-amd-cisco-saudi-ai-compute-live", "latest_finding_id": "humain-amd-cisco-saudi-ai-compute-live-2026-08-31", "first_seen_run_id": "technology-trends-2026-08-31", "last_seen_run_id": "technology-trends-2026-08-31", "source_urls": ["https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/amd-cisco-and-humain-expand-saudi-arabia-ai-infrastructure.html"]},
+    {"event_key": "eurohpc-lumi-ai-procurement-contract", "latest_finding_id": "eurohpc-lumi-ai-procurement-contract-2026-08-31", "first_seen_run_id": "technology-trends-2026-08-31", "last_seen_run_id": "technology-trends-2026-08-31", "source_urls": ["https://www.eurohpc-ju.europa.eu/eurohpc-ju-signs-contract-deploy-lumi-ai-supercomputer-2026-08-31_en", "https://newsroom.amd.com/news/amd-instinct-gpus-epyc-cpus-power-lumi-ai-supercomputer/"]},
+    {"event_key": "slb-kelvion-data-center-cooling-acquisition", "latest_finding_id": "slb-kelvion-data-center-cooling-acquisition-2026-08-31", "first_seen_run_id": "technology-trends-2026-08-31", "last_seen_run_id": "technology-trends-2026-08-31", "source_urls": ["https://www.slb.com/newsroom/press-release/2026/pr-2026-0831"]},
+    {"event_key": "nasa-roman-space-telescope-launch", "latest_finding_id": "nasa-roman-space-telescope-launch-2026-08-30", "first_seen_run_id": "technology-trends-2026-08-31", "last_seen_run_id": "technology-trends-2026-08-31", "source_urls": ["https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/"]},
+    {"event_key": "neovolta-sk-on-us-bess-manufacturing-collaboration", "latest_finding_id": "neovolta-sk-on-us-bess-18gwh-collaboration-2026-08-31", "first_seen_run_id": "technology-trends-2026-08-31", "last_seen_run_id": "technology-trends-2026-08-31", "source_urls": ["https://neovolta.com/blog/neovolta-announces-strategic-u-s-battery-cell-supply-and-bess-manufacturing-coll"]}
+  ],
+  "category_observations": [
+    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "ai-computing", "direction": "up", "velocity_score": 2, "confidence": 0.99, "justification": "Production deployment and binding sovereign procurement advanced simultaneously.", "evidence_count": 2, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"},
+    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "aerospace-space", "direction": "up", "velocity_score": 2, "confidence": 0.99, "justification": "Roman successfully crossed into flight deployment.", "evidence_count": 1, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"},
+    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "robotics-autonomy", "direction": "unknown", "velocity_score": 0, "confidence": 0.55, "justification": "No qualifying observation; unknown is not flat.", "evidence_count": 0, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"},
+    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "advanced-manufacturing", "direction": "up", "velocity_score": 2, "confidence": 0.96, "justification": "Cooling and battery manufacturing showed localization and vertical integration.", "evidence_count": 2, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"},
+    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "energy", "direction": "up", "velocity_score": 2, "confidence": 0.95, "justification": "Storage manufacturing and thermal constraints advanced as strategic infrastructure layers.", "evidence_count": 2, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"},
+    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "transportation", "direction": "unknown", "velocity_score": 0, "confidence": 0.55, "justification": "No qualifying observation; unknown is not flat.", "evidence_count": 0, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"},
+    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "biotech", "direction": "unknown", "velocity_score": 0, "confidence": 0.62, "justification": "No qualifying observation inside the original review window.", "evidence_count": 0, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"},
+    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "enabling-infrastructure", "direction": "up", "velocity_score": 2, "confidence": 0.99, "justification": "Compute, cooling, storage, space, and manufacturing all advanced physical infrastructure.", "evidence_count": 1, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"}
+  ]
+}

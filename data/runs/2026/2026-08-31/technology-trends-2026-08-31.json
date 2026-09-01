@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "record_type": "technology_trend_run",
+  "timezone": "America/Los_Angeles",
+  "run_id": "technology-trends-2026-08-31",
+  "scheduled_for": "2026-08-31T08:00:00-07:00",
+  "observed_at": "2026-08-31T08:13:32-07:00",
+  "window_start": "2026-08-30T08:13:32-07:00",
+  "window_end": "2026-08-31T08:13:32-07:00",
+  "status": "success",
+  "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html",
+  "methodology": {
+    "finding_count": 5,
+    "observation_window_basis": "Historical fallback used roughly the previous 24 hours with a small allowance for high-signal events from the preceding calendar day; no wider Monday window was available in the original run.",
+    "ranking_basis": "Signal strength rather than popularity, emphasizing difficult-to-reverse commercialization and deployment commitments.",
+    "source_policy": "Prefer primary company, government, regulatory, and research-institution announcements.",
+    "repeat_policy": "Do not repeat an earlier event unless materially changed; full canonical duplicate checking was unavailable during the original run.",
+    "selection_focus": ["commercialization", "deployment", "manufacturing capacity", "infrastructure buildout", "strategic partnerships", "geographic expansion", "regulatory approval", "meaningful technical milestones"],
+    "excluded_noise": ["consumer-gadget noise", "routine software updates", "generic funding announcements", "repetitive coverage without substantive change"]
+  },
+  "provenance": {
+    "kind": "historical-import",
+    "source": "ChatGPT conversation 6a8e3a02-9b30-83e8-a705-bdd209e947c2, August 31 fallback report and proposed JSON record",
+    "imported_at": "2026-09-01T07:40:00-07:00",
+    "notes": "Source links and assessment evidence were normalized mechanically from the original findings. No compared_to_run_id was inferred."
+  },
+  "findings": [
+    {
+      "rank": 1,
+      "finding_id": "humain-amd-cisco-saudi-ai-compute-live-2026-08-31",
+      "event_key": "humain-amd-cisco-saudi-ai-compute-live",
+      "headline": "HUMAIN, AMD and Cisco put production AI compute live in Saudi Arabia and outline a 250 MW next phase",
+      "summary": "HUMAIN began serving production AI workloads in Saudi Arabia on AMD Instinct MI355X GPUs, AMD EPYC CPUs and Cisco Silicon One networking. The partners also outlined a next deployment phase of up to 250 MW beginning in 2027 and retained a target of up to 1 GW by 2030.",
+      "why_it_matters": "Previously announced capacity crossed into customer-serving commercial operation, making this stronger evidence than a spending plan.",
+      "trend_statement": "Sovereign AI infrastructure is moving from announcements into production deployment at utility-scale capacity targets.",
+      "material_update_from": null,
+      "source_links": [{"title": "Cisco — AMD, Cisco and HUMAIN expand Saudi Arabia AI infrastructure", "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/amd-cisco-and-humain-expand-saudi-arabia-ai-infrastructure.html", "source_type": "primary-company-announcement", "published_at": "2026-08-31"}],
+      "category_ids": ["ai-computing", "enabling-infrastructure", "advanced-manufacturing"]
+    },
+    {
+      "rank": 2,
+      "finding_id": "eurohpc-lumi-ai-procurement-contract-2026-08-31",
+      "event_key": "eurohpc-lumi-ai-procurement-contract",
+      "headline": "EuroHPC signs €387.8 million LUMI-AI procurement contract for a tenfold increase in AI capacity",
+      "summary": "EuroHPC signed the procurement contract for LUMI-AI in Finland. The system is expected to use AMD Instinct MI430X GPUs, provide ten times the AI capacity of the existing LUMI system, and become available in 2027 as part of a wider European AI Factory network.",
+      "why_it_matters": "A binding procurement contract converts sovereign-compute policy into funded physical infrastructure.",
+      "trend_statement": "Regional AI strategies are hardening into multi-system sovereign compute buildouts.",
+      "material_update_from": null,
+      "source_links": [
+        {"title": "EuroHPC JU — Contract to deploy the LUMI-AI supercomputer", "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-signs-contract-deploy-lumi-ai-supercomputer-2026-08-31_en", "source_type": "primary-government-announcement", "published_at": "2026-08-31"},
+        {"title": "AMD — Instinct GPUs and EPYC CPUs to power LUMI-AI", "url": "https://newsroom.amd.com/news/amd-instinct-gpus-epyc-cpus-power-lumi-ai-supercomputer/", "source_type": "primary-company-announcement", "published_at": "2026-08-31"}
+      ],
+      "category_ids": ["ai-computing", "enabling-infrastructure"]
+    },
+    {
+      "rank": 3,
+      "finding_id": "slb-kelvion-data-center-cooling-acquisition-2026-08-31",
+      "event_key": "slb-kelvion-data-center-cooling-acquisition",
+      "headline": "SLB moves to acquire Kelvion for $3.4 billion, vertically integrating data-center thermal management",
+      "summary": "SLB agreed to acquire thermal-management specialist Kelvion for about $3.4 billion in cash while assuming about $700 million of debt. Kelvion expected $1.2–$1.3 billion of 2026 revenue from data centers, its largest and fastest-growing market.",
+      "why_it_matters": "A major industrial acquisition indicates that data-center cooling has become strategically important enough to drive vertical integration.",
+      "trend_statement": "Thermal management is becoming a binding, investable layer of the AI infrastructure stack.",
+      "material_update_from": null,
+      "source_links": [{"title": "SLB — To acquire Kelvion", "url": "https://www.slb.com/newsroom/press-release/2026/pr-2026-0831", "source_type": "primary-company-announcement", "published_at": "2026-08-31"}],
+      "category_ids": ["enabling-infrastructure", "advanced-manufacturing", "energy"]
+    },
+    {
+      "rank": 4,
+      "finding_id": "nasa-roman-space-telescope-launch-2026-08-30",
+      "event_key": "nasa-roman-space-telescope-launch",
+      "headline": "NASA’s Nancy Grace Roman Space Telescope successfully launches on Falcon Heavy",
+      "summary": "NASA launched the Nancy Grace Roman Space Telescope on August 30 aboard Falcon Heavy. Roman began its journey toward Sun-Earth L2 carrying its science payload and a coronagraph technology demonstration.",
+      "why_it_matters": "A flagship observatory crossed the highest-risk transition from development into flight operations.",
+      "trend_statement": "Advanced space-science platforms continue moving from long development programs into deployed infrastructure.",
+      "material_update_from": null,
+      "source_links": [{"title": "NASA — Nancy Grace Roman Space Telescope launches", "url": "https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/", "source_type": "primary-government-announcement", "published_at": "2026-08-30"}],
+      "category_ids": ["aerospace-space", "enabling-infrastructure"]
+    },
+    {
+      "rank": 5,
+      "finding_id": "neovolta-sk-on-us-bess-18gwh-collaboration-2026-08-31",
+      "event_key": "neovolta-sk-on-us-bess-manufacturing-collaboration",
+      "headline": "NeoVolta and SK On establish a U.S. battery-storage manufacturing collaboration covering up to 18 GWh",
+      "summary": "NeoVolta signed a five-year agreement for 9 GWh of U.S.-manufactured LFP cells from SK On and established a framework for another 9 GWh tied to domestically manufactured storage packs.",
+      "why_it_matters": "The agreement is a concrete domestic supply and manufacturing commitment rather than a generic partnership announcement.",
+      "trend_statement": "Grid-storage supply chains are localizing and scaling alongside data-center and electricity-system demand.",
+      "material_update_from": null,
+      "source_links": [{"title": "NeoVolta — U.S. battery cell supply and BESS manufacturing collaboration with SK On", "url": "https://neovolta.com/blog/neovolta-announces-strategic-u-s-battery-cell-supply-and-bess-manufacturing-coll", "source_type": "primary-company-announcement", "published_at": "2026-08-31"}],
+      "category_ids": ["energy", "advanced-manufacturing", "enabling-infrastructure"]
+    }
+  ],
+  "category_assessments": [
+    {"category_id": "ai-computing", "category_name": "AI and Computing", "direction": "up", "velocity_score": 2, "confidence": 0.99, "evidence": [
+      {"evidence_summary": "Production AI compute began serving customers in Saudi Arabia.", "finding_id": "humain-amd-cisco-saudi-ai-compute-live-2026-08-31", "source_url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/amd-cisco-and-humain-expand-saudi-arabia-ai-infrastructure.html", "source_type": "primary-company-announcement", "published_at": "2026-08-31", "reference_run_id": null},
+      {"evidence_summary": "EuroHPC signed a binding LUMI-AI procurement contract.", "finding_id": "eurohpc-lumi-ai-procurement-contract-2026-08-31", "source_url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-signs-contract-deploy-lumi-ai-supercomputer-2026-08-31_en", "source_type": "primary-government-announcement", "published_at": "2026-08-31", "reference_run_id": null}
+    ], "justification": "Two independent infrastructure programs crossed from planning into operating deployment or binding procurement at sovereign scale.", "compared_to_run_id": null, "assessed_at": "2026-08-31T08:13:32-07:00"},
+    {"category_id": "aerospace-space", "category_name": "Aerospace and Space", "direction": "up", "velocity_score": 2, "confidence": 0.99, "evidence": [
+      {"evidence_summary": "Roman successfully launched and began transfer toward L2.", "finding_id": "nasa-roman-space-telescope-launch-2026-08-30", "source_url": "https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/", "source_type": "primary-government-announcement", "published_at": "2026-08-30", "reference_run_id": null}
+    ], "justification": "A flagship science platform crossed the highest-risk deployment milestone.", "compared_to_run_id": null, "assessed_at": "2026-08-31T08:13:32-07:00"},
+    {"category_id": "robotics-autonomy", "category_name": "Robotics and Autonomy", "direction": "unknown", "velocity_score": 0, "confidence": 0.55, "evidence": [], "justification": "No robotics or autonomy development in the review window exceeded the materiality threshold; unknown is used rather than flat.", "compared_to_run_id": null, "assessed_at": "2026-08-31T08:13:32-07:00"},
+    {"category_id": "advanced-manufacturing", "category_name": "Advanced Manufacturing", "direction": "up", "velocity_score": 2, "confidence": 0.96, "evidence": [
+      {"evidence_summary": "SLB moved to vertically integrate data-center thermal equipment through the Kelvion acquisition.", "finding_id": "slb-kelvion-data-center-cooling-acquisition-2026-08-31", "source_url": "https://www.slb.com/newsroom/press-release/2026/pr-2026-0831", "source_type": "primary-company-announcement", "published_at": "2026-08-31", "reference_run_id": null},
+      {"evidence_summary": "NeoVolta and SK On established a large U.S. battery supply and manufacturing framework.", "finding_id": "neovolta-sk-on-us-bess-18gwh-collaboration-2026-08-31", "source_url": "https://neovolta.com/blog/neovolta-announces-strategic-u-s-battery-cell-supply-and-bess-manufacturing-coll", "source_type": "primary-company-announcement", "published_at": "2026-08-31", "reference_run_id": null}
+    ], "justification": "Capacity localization and vertical integration advanced around cooling and grid storage.", "compared_to_run_id": null, "assessed_at": "2026-08-31T08:13:32-07:00"},
+    {"category_id": "energy", "category_name": "Energy", "direction": "up", "velocity_score": 2, "confidence": 0.95, "evidence": [
+      {"evidence_summary": "Cooling consolidation reflected growing energy and heat-removal constraints.", "finding_id": "slb-kelvion-data-center-cooling-acquisition-2026-08-31", "source_url": "https://www.slb.com/newsroom/press-release/2026/pr-2026-0831", "source_type": "primary-company-announcement", "published_at": "2026-08-31", "reference_run_id": null},
+      {"evidence_summary": "The NeoVolta/SK On framework covered up to 18 GWh of U.S. storage supply and manufacturing.", "finding_id": "neovolta-sk-on-us-bess-18gwh-collaboration-2026-08-31", "source_url": "https://neovolta.com/blog/neovolta-announces-strategic-u-s-battery-cell-supply-and-bess-manufacturing-coll", "source_type": "primary-company-announcement", "published_at": "2026-08-31", "reference_run_id": null}
+    ], "justification": "Stationary-storage manufacturing and thermal-management investment advanced as electricity and heat removal became strategic constraints.", "compared_to_run_id": null, "assessed_at": "2026-08-31T08:13:32-07:00"},
+    {"category_id": "transportation", "category_name": "Transportation", "direction": "unknown", "velocity_score": 0, "confidence": 0.55, "evidence": [], "justification": "No transportation development in the review window exceeded the materiality threshold; unknown is used rather than flat.", "compared_to_run_id": null, "assessed_at": "2026-08-31T08:13:32-07:00"},
+    {"category_id": "biotech", "category_name": "Biotechnology", "direction": "unknown", "velocity_score": 0, "confidence": 0.62, "evidence": [], "justification": "No biotechnology event inside the original review window exceeded the materiality threshold.", "compared_to_run_id": null, "assessed_at": "2026-08-31T08:13:32-07:00"},
+    {"category_id": "enabling-infrastructure", "category_name": "Enabling Infrastructure", "direction": "up", "velocity_score": 2, "confidence": 0.99, "evidence": [
+      {"evidence_summary": "Production compute, sovereign procurement, cooling consolidation, a deployed observatory, and battery manufacturing all advanced physical infrastructure.", "finding_id": "humain-amd-cisco-saudi-ai-compute-live-2026-08-31", "source_url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/amd-cisco-and-humain-expand-saudi-arabia-ai-infrastructure.html", "source_type": "primary-company-announcement", "published_at": "2026-08-31", "reference_run_id": null}
+    ], "justification": "The dominant signal was continued physicalization of the technology cycle across compute, cooling, storage, space, and manufacturing.", "compared_to_run_id": null, "assessed_at": "2026-08-31T08:13:32-07:00"}
+  ]
+}
