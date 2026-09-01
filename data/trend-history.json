@@ -4,9 +4,42 @@
   "timezone": "America/Los_Angeles",
   "ledger_authority": "data/runs",
   "created_at": "2026-09-01T07:40:00-07:00",
-  "updated_at": "2026-09-01T07:40:00-07:00",
+  "updated_at": "2026-09-01T08:04:43-07:00",
   "latest_successful_run_id": "technology-trends-2026-08-31",
   "runs": [
+    {
+      "run_id": "technology-trends-2026-08-26",
+      "scheduled_for": "2026-08-26T08:00:00-07:00",
+      "observed_at": "2026-08-26T08:31:50-07:00",
+      "window_start": "2026-08-25T08:31:50-07:00",
+      "window_end": "2026-08-26T08:31:50-07:00",
+      "status": "success",
+      "run_record_path": "data/runs/2026/2026-08-26/technology-trends-2026-08-26.json",
+      "report_path": "reports/2026/2026-08-26/technology-trend-update-technology-trends-2026-08-26.html",
+      "finding_count": 5
+    },
+    {
+      "run_id": "technology-trends-2026-08-27",
+      "scheduled_for": "2026-08-27T08:00:00-07:00",
+      "observed_at": "2026-08-27T08:04:17-07:00",
+      "window_start": "2026-08-26T08:31:50-07:00",
+      "window_end": "2026-08-27T08:04:17-07:00",
+      "status": "success",
+      "run_record_path": "data/runs/2026/2026-08-27/technology-trends-2026-08-27.json",
+      "report_path": "reports/2026/2026-08-27/technology-trend-update-technology-trends-2026-08-27.html",
+      "finding_count": 5
+    },
+    {
+      "run_id": "technology-trends-2026-08-28",
+      "scheduled_for": "2026-08-28T08:00:00-07:00",
+      "observed_at": "2026-08-28T08:05:57-07:00",
+      "window_start": "2026-08-27T08:04:17-07:00",
+      "window_end": "2026-08-28T08:05:57-07:00",
+      "status": "success",
+      "run_record_path": "data/runs/2026/2026-08-28/technology-trends-2026-08-28.json",
+      "report_path": "reports/2026/2026-08-28/technology-trend-update-technology-trends-2026-08-28.html",
+      "finding_count": 5
+    },
     {
       "run_id": "technology-trends-2026-08-31",
       "scheduled_for": "2026-08-31T08:00:00-07:00",
@@ -20,20 +53,540 @@
     }
   ],
   "finding_events": [
-    {"event_key": "humain-amd-cisco-saudi-ai-compute-live", "latest_finding_id": "humain-amd-cisco-saudi-ai-compute-live-2026-08-31", "first_seen_run_id": "technology-trends-2026-08-31", "last_seen_run_id": "technology-trends-2026-08-31", "source_urls": ["https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/amd-cisco-and-humain-expand-saudi-arabia-ai-infrastructure.html"]},
-    {"event_key": "eurohpc-lumi-ai-procurement-contract", "latest_finding_id": "eurohpc-lumi-ai-procurement-contract-2026-08-31", "first_seen_run_id": "technology-trends-2026-08-31", "last_seen_run_id": "technology-trends-2026-08-31", "source_urls": ["https://www.eurohpc-ju.europa.eu/eurohpc-ju-signs-contract-deploy-lumi-ai-supercomputer-2026-08-31_en", "https://newsroom.amd.com/news/amd-instinct-gpus-epyc-cpus-power-lumi-ai-supercomputer/"]},
-    {"event_key": "slb-kelvion-data-center-cooling-acquisition", "latest_finding_id": "slb-kelvion-data-center-cooling-acquisition-2026-08-31", "first_seen_run_id": "technology-trends-2026-08-31", "last_seen_run_id": "technology-trends-2026-08-31", "source_urls": ["https://www.slb.com/newsroom/press-release/2026/pr-2026-0831"]},
-    {"event_key": "nasa-roman-space-telescope-launch", "latest_finding_id": "nasa-roman-space-telescope-launch-2026-08-30", "first_seen_run_id": "technology-trends-2026-08-31", "last_seen_run_id": "technology-trends-2026-08-31", "source_urls": ["https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/"]},
-    {"event_key": "neovolta-sk-on-us-bess-manufacturing-collaboration", "latest_finding_id": "neovolta-sk-on-us-bess-18gwh-collaboration-2026-08-31", "first_seen_run_id": "technology-trends-2026-08-31", "last_seen_run_id": "technology-trends-2026-08-31", "source_urls": ["https://neovolta.com/blog/neovolta-announces-strategic-u-s-battery-cell-supply-and-bess-manufacturing-coll"]}
+    {
+      "event_key": "airbound-andhra-pradesh-deployment",
+      "latest_finding_id": "airbound-andhra-pradesh-deployment-2026-08-26",
+      "first_seen_run_id": "technology-trends-2026-08-26",
+      "last_seen_run_id": "technology-trends-2026-08-26",
+      "source_urls": [
+        "https://www.globenewswire.com/de/news-release/2026/08/25/3350182/0/en/airbound-scales-new-class-of-aircraft-to-change-the-economics-of-flight.html"
+      ]
+    },
+    {
+      "event_key": "anthropic-model-hardware-standard-preview",
+      "latest_finding_id": "anthropic-model-hardware-standard-preview-2026-08-28",
+      "first_seen_run_id": "technology-trends-2026-08-28",
+      "last_seen_run_id": "technology-trends-2026-08-28",
+      "source_urls": [
+        "https://www.anthropic.com/news/model-hardware-standard-research-preview"
+      ]
+    },
+    {
+      "event_key": "aptiv-nvidia-production-edge-ai",
+      "latest_finding_id": "aptiv-nvidia-production-edge-ai-2026-08-26",
+      "first_seen_run_id": "technology-trends-2026-08-26",
+      "last_seen_run_id": "technology-trends-2026-08-26",
+      "source_urls": [
+        "https://www.aptiv.com/en/newsroom/article/aptiv-to-deliver-production-ready-edge-ai-with-long-term-support-with-nvidia"
+      ]
+    },
+    {
+      "event_key": "aws-nvidia-two-million-gpu-commitment",
+      "latest_finding_id": "aws-nvidia-two-million-gpu-commitment-2026-08-27",
+      "first_seen_run_id": "technology-trends-2026-08-27",
+      "last_seen_run_id": "technology-trends-2026-08-27",
+      "source_urls": [
+        "https://nvidianews.nvidia.com/news/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai"
+      ]
+    },
+    {
+      "event_key": "biosidus-biologics-capacity-online",
+      "latest_finding_id": "biosidus-biologics-capacity-online-2026-08-27",
+      "first_seen_run_id": "technology-trends-2026-08-27",
+      "last_seen_run_id": "technology-trends-2026-08-27",
+      "source_urls": [
+        "https://www.prnewswire.com/news-releases/biosidus-expands-biologics-manufacturing-capacity-and-strengthens-global-supply-capabilities-for-agalsidase-beta-302860963.html"
+      ]
+    },
+    {
+      "event_key": "eurohpc-lumi-ai-procurement-contract",
+      "latest_finding_id": "eurohpc-lumi-ai-procurement-contract-2026-08-31",
+      "first_seen_run_id": "technology-trends-2026-08-31",
+      "last_seen_run_id": "technology-trends-2026-08-31",
+      "source_urls": [
+        "https://www.eurohpc-ju.europa.eu/eurohpc-ju-signs-contract-deploy-lumi-ai-supercomputer-2026-08-31_en",
+        "https://newsroom.amd.com/news/amd-instinct-gpus-epyc-cpus-power-lumi-ai-supercomputer/"
+      ]
+    },
+    {
+      "event_key": "fda-lisraya-dermatomyositis-approval",
+      "latest_finding_id": "fda-lisraya-dermatomyositis-approval-2026-08-28",
+      "first_seen_run_id": "technology-trends-2026-08-28",
+      "last_seen_run_id": "technology-trends-2026-08-28",
+      "source_urls": [
+        "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-drug-indicated-treat-dermatomyositis-adults"
+      ]
+    },
+    {
+      "event_key": "fda-rasonque-pancreatic-cancer-approval",
+      "latest_finding_id": "fda-rasonque-pancreatic-cancer-approval-2026-08-27",
+      "first_seen_run_id": "technology-trends-2026-08-27",
+      "last_seen_run_id": "technology-trends-2026-08-27",
+      "source_urls": [
+        "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-daraxonrasib-metastatic-pancreatic-adenocarcinoma"
+      ]
+    },
+    {
+      "event_key": "fda-ziihera-first-line-approval",
+      "latest_finding_id": "fda-ziihera-first-line-approval-2026-08-26",
+      "first_seen_run_id": "technology-trends-2026-08-26",
+      "last_seen_run_id": "technology-trends-2026-08-26",
+      "source_urls": [
+        "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-zanidatamab-hrii-and-tislelizumab-jsgr-her2-positive-gastric-gastroesophageal-junction"
+      ]
+    },
+    {
+      "event_key": "formic-oakland-robotics-facility",
+      "latest_finding_id": "formic-oakland-robotics-facility-2026-08-26",
+      "first_seen_run_id": "technology-trends-2026-08-26",
+      "last_seen_run_id": "technology-trends-2026-08-26",
+      "source_urls": [
+        "https://www.businesswire.com/news/home/20260826975448/en/Formic-Opens-Oakland-Facility-Anchoring-Humanoid-and-Physical-AI-Expansion-in-the-Bay-Area-Alongside-Tesla-and-Amazon"
+      ]
+    },
+    {
+      "event_key": "humain-amd-cisco-saudi-ai-compute-live",
+      "latest_finding_id": "humain-amd-cisco-saudi-ai-compute-live-2026-08-31",
+      "first_seen_run_id": "technology-trends-2026-08-31",
+      "last_seen_run_id": "technology-trends-2026-08-31",
+      "source_urls": [
+        "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/amd-cisco-and-humain-expand-saudi-arabia-ai-infrastructure.html"
+      ]
+    },
+    {
+      "event_key": "iem-san-antonio-power-equipment-factory",
+      "latest_finding_id": "iem-san-antonio-power-equipment-factory-2026-08-26",
+      "first_seen_run_id": "technology-trends-2026-08-26",
+      "last_seen_run_id": "technology-trends-2026-08-26",
+      "source_urls": [
+        "https://www.iemfg.com/news-stories/iem-announces-200-million-manufacturing-facility-in-san-antonio-creating-jobs-and-expanding-us-production-capacity-to-support-business-growth/"
+      ]
+    },
+    {
+      "event_key": "lam-research-oregon-ai-chip-lab",
+      "latest_finding_id": "lam-research-oregon-ai-chip-lab-2026-08-27",
+      "first_seen_run_id": "technology-trends-2026-08-27",
+      "last_seen_run_id": "technology-trends-2026-08-27",
+      "source_urls": [
+        "https://newsroom.lamresearch.com/2026-08-26-Lam-Research-Breaks-Ground-on-New-Oregon-Lab-to-Accelerate-AI-Era-Semiconductor-Research-Development-Locally%2C-Globally"
+      ]
+    },
+    {
+      "event_key": "nasa-quantum-gravity-sensor-hardware-development",
+      "latest_finding_id": "nasa-quantum-gravity-sensor-hardware-development-2026-08-28",
+      "first_seen_run_id": "technology-trends-2026-08-28",
+      "last_seen_run_id": "technology-trends-2026-08-28",
+      "source_urls": [
+        "https://ir.infleqtion.com/news-events/press-releases/detail/207/nasa-awards-infleqtion-20-million-as-worlds-first-quantum-gravity-mission-advances-toward-flight"
+      ]
+    },
+    {
+      "event_key": "nasa-roman-space-telescope-launch",
+      "latest_finding_id": "nasa-roman-space-telescope-launch-2026-08-30",
+      "first_seen_run_id": "technology-trends-2026-08-31",
+      "last_seen_run_id": "technology-trends-2026-08-31",
+      "source_urls": [
+        "https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/"
+      ]
+    },
+    {
+      "event_key": "neovolta-sk-on-us-bess-manufacturing-collaboration",
+      "latest_finding_id": "neovolta-sk-on-us-bess-18gwh-collaboration-2026-08-31",
+      "first_seen_run_id": "technology-trends-2026-08-31",
+      "last_seen_run_id": "technology-trends-2026-08-31",
+      "source_urls": [
+        "https://neovolta.com/blog/neovolta-announces-strategic-u-s-battery-cell-supply-and-bess-manufacturing-coll"
+      ]
+    },
+    {
+      "event_key": "openai-georgia-power-3-2-gw-approval",
+      "latest_finding_id": "openai-georgia-power-3-2-gw-approval-2026-08-27",
+      "first_seen_run_id": "technology-trends-2026-08-27",
+      "last_seen_run_id": "technology-trends-2026-08-27",
+      "source_urls": [
+        "https://www.georgiapower.com/news-hub/press-releases/contract-openai-approved-part-portfolio-delivering-950-million-annual-savings.html"
+      ]
+    },
+    {
+      "event_key": "robosense-physical-ai-components-commercialization",
+      "latest_finding_id": "robosense-physical-ai-components-commercialization-2026-08-28",
+      "first_seen_run_id": "technology-trends-2026-08-28",
+      "last_seen_run_id": "technology-trends-2026-08-28",
+      "source_urls": [
+        "https://www.prnewswire.com/news-releases/robosense-reports-2026-interim-results-with-robotics-lidar-sales-volume-up-510-4-year-over-year-302861445.html"
+      ]
+    },
+    {
+      "event_key": "slb-kelvion-data-center-cooling-acquisition",
+      "latest_finding_id": "slb-kelvion-data-center-cooling-acquisition-2026-08-31",
+      "first_seen_run_id": "technology-trends-2026-08-31",
+      "last_seen_run_id": "technology-trends-2026-08-31",
+      "source_urls": [
+        "https://www.slb.com/newsroom/press-release/2026/pr-2026-0831"
+      ]
+    },
+    {
+      "event_key": "softbank-airport-cleaning-fleet-scale",
+      "latest_finding_id": "softbank-airport-cleaning-fleet-scale-2026-08-28",
+      "first_seen_run_id": "technology-trends-2026-08-28",
+      "last_seen_run_id": "technology-trends-2026-08-28",
+      "source_urls": [
+        "https://www.softbankrobotics.com/news/20260828/"
+      ]
+    }
   ],
   "category_observations": [
-    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "ai-computing", "direction": "up", "velocity_score": 2, "confidence": 0.99, "justification": "Production deployment and binding sovereign procurement advanced simultaneously.", "evidence_count": 2, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"},
-    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "aerospace-space", "direction": "up", "velocity_score": 2, "confidence": 0.99, "justification": "Roman successfully crossed into flight deployment.", "evidence_count": 1, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"},
-    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "robotics-autonomy", "direction": "unknown", "velocity_score": 0, "confidence": 0.55, "justification": "No qualifying observation; unknown is not flat.", "evidence_count": 0, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"},
-    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "advanced-manufacturing", "direction": "up", "velocity_score": 2, "confidence": 0.96, "justification": "Cooling and battery manufacturing showed localization and vertical integration.", "evidence_count": 2, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"},
-    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "energy", "direction": "up", "velocity_score": 2, "confidence": 0.95, "justification": "Storage manufacturing and thermal constraints advanced as strategic infrastructure layers.", "evidence_count": 2, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"},
-    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "transportation", "direction": "unknown", "velocity_score": 0, "confidence": 0.55, "justification": "No qualifying observation; unknown is not flat.", "evidence_count": 0, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"},
-    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "biotech", "direction": "unknown", "velocity_score": 0, "confidence": 0.62, "justification": "No qualifying observation inside the original review window.", "evidence_count": 0, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"},
-    {"run_id": "technology-trends-2026-08-31", "scheduled_for": "2026-08-31T08:00:00-07:00", "category_id": "enabling-infrastructure", "direction": "up", "velocity_score": 2, "confidence": 0.99, "justification": "Compute, cooling, storage, space, and manufacturing all advanced physical infrastructure.", "evidence_count": 1, "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"}
+    {
+      "run_id": "technology-trends-2026-08-26",
+      "scheduled_for": "2026-08-26T08:00:00-07:00",
+      "category_id": "ai-computing",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.93,
+      "justification": "Physical capacity expansion showed AI demand propagating into industrial supply.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-26/technology-trend-update-technology-trends-2026-08-26.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-26",
+      "scheduled_for": "2026-08-26T08:00:00-07:00",
+      "category_id": "aerospace-space",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.79,
+      "justification": "The agreement advanced a novel aircraft from prototype work toward service.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-26/technology-trend-update-technology-trends-2026-08-26.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-26",
+      "scheduled_for": "2026-08-26T08:00:00-07:00",
+      "category_id": "robotics-autonomy",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.88,
+      "justification": "Deployment capacity and service economics lowered adoption barriers.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-26/technology-trend-update-technology-trends-2026-08-26.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-26",
+      "scheduled_for": "2026-08-26T08:00:00-07:00",
+      "category_id": "advanced-manufacturing",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.9,
+      "justification": "Difficult-to-reverse factory and automation commitments indicated strong progression.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-26/technology-trend-update-technology-trends-2026-08-26.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-26",
+      "scheduled_for": "2026-08-26T08:00:00-07:00",
+      "category_id": "energy",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.8,
+      "justification": "Power-equipment capacity was a positive enabling signal, though not a generation milestone.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-26/technology-trend-update-technology-trends-2026-08-26.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-26",
+      "scheduled_for": "2026-08-26T08:00:00-07:00",
+      "category_id": "transportation",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.79,
+      "justification": "The deployment agreement was a positive commercialization signal.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-26/technology-trend-update-technology-trends-2026-08-26.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-26",
+      "scheduled_for": "2026-08-26T08:00:00-07:00",
+      "category_id": "biotech",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.95,
+      "justification": "A first-line approval materially broadened commercial use of bispecific antibody technology.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-26/technology-trend-update-technology-trends-2026-08-26.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-26",
+      "scheduled_for": "2026-08-26T08:00:00-07:00",
+      "category_id": "enabling-infrastructure",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.92,
+      "justification": "The run showed infrastructure scaling both below compute and at the production edge.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-26/technology-trend-update-technology-trends-2026-08-26.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-27",
+      "scheduled_for": "2026-08-27T08:00:00-07:00",
+      "category_id": "ai-computing",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.97,
+      "justification": "Hyperscale compute and utility capacity both advanced through difficult-to-reverse commitments.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-27/technology-trend-update-technology-trends-2026-08-27.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-27",
+      "scheduled_for": "2026-08-27T08:00:00-07:00",
+      "category_id": "aerospace-space",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.6,
+      "justification": "No aerospace or space development cleared the materiality threshold; unknown is not flat.",
+      "evidence_count": 0,
+      "report_path": "reports/2026/2026-08-27/technology-trend-update-technology-trends-2026-08-27.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-27",
+      "scheduled_for": "2026-08-27T08:00:00-07:00",
+      "category_id": "robotics-autonomy",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.75,
+      "justification": "The robotics linkage was positive but secondary to the compute commitment.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-27/technology-trend-update-technology-trends-2026-08-27.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-27",
+      "scheduled_for": "2026-08-27T08:00:00-07:00",
+      "category_id": "advanced-manufacturing",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.92,
+      "justification": "Semiconductor R&D construction and operating biologics capacity advanced together.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-27/technology-trend-update-technology-trends-2026-08-27.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-27",
+      "scheduled_for": "2026-08-27T08:00:00-07:00",
+      "category_id": "energy",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.99,
+      "justification": "The approved contract placed AI demand at utility-system scale.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-27/technology-trend-update-technology-trends-2026-08-27.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-27",
+      "scheduled_for": "2026-08-27T08:00:00-07:00",
+      "category_id": "transportation",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.6,
+      "justification": "No transportation development cleared the materiality threshold; unknown is not flat.",
+      "evidence_count": 0,
+      "report_path": "reports/2026/2026-08-27/technology-trend-update-technology-trends-2026-08-27.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-27",
+      "scheduled_for": "2026-08-27T08:00:00-07:00",
+      "category_id": "biotech",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.96,
+      "justification": "A new targeted mechanism reached approval while manufacturing capacity came online.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-27/technology-trend-update-technology-trends-2026-08-27.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-27",
+      "scheduled_for": "2026-08-27T08:00:00-07:00",
+      "category_id": "enabling-infrastructure",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.98,
+      "justification": "The run's dominant signal was physical infrastructure becoming harder to reverse.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-27/technology-trend-update-technology-trends-2026-08-27.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-28",
+      "scheduled_for": "2026-08-28T08:00:00-07:00",
+      "category_id": "ai-computing",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.78,
+      "justification": "The interface could be consequential but remained a research preview.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-28/technology-trend-update-technology-trends-2026-08-28.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-28",
+      "scheduled_for": "2026-08-28T08:00:00-07:00",
+      "category_id": "aerospace-space",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.92,
+      "justification": "The program crossed into a concrete hardware-development phase.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-28/technology-trend-update-technology-trends-2026-08-28.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-28",
+      "scheduled_for": "2026-08-28T08:00:00-07:00",
+      "category_id": "robotics-autonomy",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.98,
+      "justification": "Fleet operating data, component scaling, and interoperability advanced simultaneously.",
+      "evidence_count": 2,
+      "report_path": "reports/2026/2026-08-28/technology-trend-update-technology-trends-2026-08-28.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-28",
+      "scheduled_for": "2026-08-28T08:00:00-07:00",
+      "category_id": "advanced-manufacturing",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.84,
+      "justification": "Component production advanced, though the interoperability standard was still early.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-28/technology-trend-update-technology-trends-2026-08-28.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-28",
+      "scheduled_for": "2026-08-28T08:00:00-07:00",
+      "category_id": "energy",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.6,
+      "justification": "No energy development cleared the materiality threshold; unknown is not flat.",
+      "evidence_count": 0,
+      "report_path": "reports/2026/2026-08-28/technology-trend-update-technology-trends-2026-08-28.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-28",
+      "scheduled_for": "2026-08-28T08:00:00-07:00",
+      "category_id": "transportation",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.6,
+      "justification": "No transportation development cleared the materiality threshold; unknown is not flat.",
+      "evidence_count": 0,
+      "report_path": "reports/2026/2026-08-28/technology-trend-update-technology-trends-2026-08-28.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-28",
+      "scheduled_for": "2026-08-28T08:00:00-07:00",
+      "category_id": "biotech",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.99,
+      "justification": "A targeted therapy crossed into an approved underserved indication.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-28/technology-trend-update-technology-trends-2026-08-28.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-28",
+      "scheduled_for": "2026-08-28T08:00:00-07:00",
+      "category_id": "enabling-infrastructure",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.94,
+      "justification": "Multiple developments strengthened the physical interfaces and components beneath downstream deployment.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-28/technology-trend-update-technology-trends-2026-08-28.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-31",
+      "scheduled_for": "2026-08-31T08:00:00-07:00",
+      "category_id": "ai-computing",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.99,
+      "justification": "Two independent infrastructure programs crossed from planning into operating deployment or binding procurement at sovereign scale.",
+      "evidence_count": 2,
+      "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-31",
+      "scheduled_for": "2026-08-31T08:00:00-07:00",
+      "category_id": "aerospace-space",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.99,
+      "justification": "A flagship science platform crossed the highest-risk deployment milestone.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-31",
+      "scheduled_for": "2026-08-31T08:00:00-07:00",
+      "category_id": "robotics-autonomy",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.55,
+      "justification": "No robotics or autonomy development in the review window exceeded the materiality threshold; unknown is used rather than flat.",
+      "evidence_count": 0,
+      "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-31",
+      "scheduled_for": "2026-08-31T08:00:00-07:00",
+      "category_id": "advanced-manufacturing",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.96,
+      "justification": "Capacity localization and vertical integration advanced around cooling and grid storage.",
+      "evidence_count": 2,
+      "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-31",
+      "scheduled_for": "2026-08-31T08:00:00-07:00",
+      "category_id": "energy",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.95,
+      "justification": "Stationary-storage manufacturing and thermal-management investment advanced as electricity and heat removal became strategic constraints.",
+      "evidence_count": 2,
+      "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-31",
+      "scheduled_for": "2026-08-31T08:00:00-07:00",
+      "category_id": "transportation",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.55,
+      "justification": "No transportation development in the review window exceeded the materiality threshold; unknown is used rather than flat.",
+      "evidence_count": 0,
+      "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-31",
+      "scheduled_for": "2026-08-31T08:00:00-07:00",
+      "category_id": "biotech",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.62,
+      "justification": "No biotechnology event inside the original review window exceeded the materiality threshold.",
+      "evidence_count": 0,
+      "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"
+    },
+    {
+      "run_id": "technology-trends-2026-08-31",
+      "scheduled_for": "2026-08-31T08:00:00-07:00",
+      "category_id": "enabling-infrastructure",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.99,
+      "justification": "The dominant signal was continued physicalization of the technology cycle across compute, cooling, storage, space, and manufacturing.",
+      "evidence_count": 1,
+      "report_path": "reports/2026/2026-08-31/technology-trend-update-technology-trends-2026-08-31.html"
+    }
   ]
 }

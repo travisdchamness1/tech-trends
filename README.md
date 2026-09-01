@@ -24,6 +24,7 @@ The existing ChatGPT scheduled task owns production writes. It runs Monday throu
 5. Derived history can be rebuilt from validated ledger files; the reverse is not authoritative.
 
 Run `python scripts/validate_repository.py .` to validate the repository.
+Run `python scripts/rebuild_derived.py .` after changing immutable ledger files to regenerate the compact history and visual, then validate before committing.
 
 ## Growth policy
 

@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "record_type": "technology_trend_run",
+  "timezone": "America/Los_Angeles",
+  "run_id": "technology-trends-2026-08-26",
+  "scheduled_for": "2026-08-26T08:00:00-07:00",
+  "observed_at": "2026-08-26T08:31:50-07:00",
+  "window_start": "2026-08-25T08:31:50-07:00",
+  "window_end": "2026-08-26T08:31:50-07:00",
+  "status": "success",
+  "report_path": "reports/2026/2026-08-26/technology-trend-update-technology-trends-2026-08-26.html",
+  "methodology": {
+    "finding_count": 5,
+    "observation_window_basis": "The original run covered approximately the preceding 24 hours.",
+    "ranking_basis": "Signal strength and evidence of commercialization, deployment, manufacturing capacity, infrastructure buildout, strategic partnership, regulatory approval, or meaningful technical progress.",
+    "source_policy": "Prefer company, government, regulatory, and research-institution primary sources.",
+    "repeat_policy": "Do not repeat a prior finding unless a substantive material update occurred.",
+    "selection_focus": ["commercialization", "deployment", "manufacturing capacity", "infrastructure buildout", "strategic partnerships", "regulatory approval", "meaningful technical milestones"],
+    "excluded_noise": ["consumer-gadget noise", "routine software updates", "generic funding announcements", "repetitive coverage without substantive change"]
+  },
+  "provenance": {
+    "kind": "historical-import",
+    "source": "Original local immutable JSON and HTML artifacts generated for the August 26, 2026 scheduled run.",
+    "imported_at": "2026-09-01T07:55:00-07:00",
+    "notes": "Finding text, dates, sources, and scores were preserved. Narrow legacy category IDs were normalized to the eight-category registry; compared_to_run_id remains null."
+  },
+  "findings": [
+    {
+      "rank": 1,
+      "finding_id": "iem-san-antonio-power-equipment-factory-2026-08-26",
+      "event_key": "iem-san-antonio-power-equipment-factory",
+      "headline": "IEM commits $200 million to a major U.S. power-equipment factory",
+      "summary": "Industrial Electric Mfg. announced a $200 million, 1-million-square-foot advanced manufacturing plant in San Antonio, expected to create as many as 3,000 jobs by 2030.",
+      "why_it_matters": "AI infrastructure growth is increasingly constrained below the GPU layer by substations, switchgear, transformers, cooling, power distribution, and interconnection.",
+      "trend_statement": "AI and data-center expansion is pulling an electrical-equipment and heavy-manufacturing supply chain along with it.",
+      "material_update_from": null,
+      "source_links": [{"title": "IEM — San Antonio manufacturing facility", "url": "https://www.iemfg.com/news-stories/iem-announces-200-million-manufacturing-facility-in-san-antonio-creating-jobs-and-expanding-us-production-capacity-to-support-business-growth/", "source_type": "primary-company-announcement", "published_at": "2026-08-26"}],
+      "category_ids": ["ai-computing", "advanced-manufacturing", "energy", "enabling-infrastructure"]
+    },
+    {
+      "rank": 2,
+      "finding_id": "airbound-andhra-pradesh-deployment-2026-08-26",
+      "event_key": "airbound-andhra-pradesh-deployment",
+      "headline": "Airbound moves its ultra-efficient aircraft toward government deployment in India",
+      "summary": "Airbound announced a $37 million Series A and a commercial deployment agreement with the Indian state of Andhra Pradesh for its new aircraft platform.",
+      "why_it_matters": "The deployment agreement is evidence of movement from engineering validation toward actual service, beyond a conventional funding announcement.",
+      "trend_statement": "Advanced aviation is beginning to cross the prototype-to-deployment boundary.",
+      "material_update_from": null,
+      "source_links": [{"title": "Airbound — Aircraft commercialization and deployment", "url": "https://www.globenewswire.com/de/news-release/2026/08/25/3350182/0/en/airbound-scales-new-class-of-aircraft-to-change-the-economics-of-flight.html", "source_type": "primary-company-announcement", "published_at": "2026-08-25"}],
+      "category_ids": ["aerospace-space", "transportation"]
+    },
+    {
+      "rank": 3,
+      "finding_id": "fda-ziihera-first-line-approval-2026-08-26",
+      "event_key": "fda-ziihera-first-line-approval",
+      "headline": "FDA approves Ziihera combination as first-line treatment for HER2-positive gastroesophageal cancers",
+      "summary": "The FDA approved Jazz Pharmaceuticals' Ziihera in first-line HER2-positive advanced gastric, gastroesophageal-junction, and esophageal adenocarcinoma, including a regimen with Tevimbra and chemotherapy.",
+      "why_it_matters": "The approval expands an already commercialized bispecific antibody into a major first-line setting and enlarges the population eligible for the technology.",
+      "trend_statement": "Engineered multispecific antibodies are moving deeper into mainstream oncology.",
+      "material_update_from": null,
+      "source_links": [{"title": "FDA — Ziihera and Tevimbra approval", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-zanidatamab-hrii-and-tislelizumab-jsgr-her2-positive-gastric-gastroesophageal-junction", "source_type": "primary-regulatory-announcement", "published_at": "2026-08-25"}],
+      "category_ids": ["biotech"]
+    },
+    {
+      "rank": 4,
+      "finding_id": "formic-oakland-robotics-facility-2026-08-26",
+      "event_key": "formic-oakland-robotics-facility",
+      "headline": "Formic opens an Oakland facility to expand industrial robotics and physical AI",
+      "summary": "Formic announced a new Oakland facility supporting its Full Service Automation model for U.S. manufacturers and its expansion into physical-AI and humanoid-related automation.",
+      "why_it_matters": "Bundling equipment, deployment, and maintenance into a recurring operating cost removes a major adoption barrier for smaller and mid-sized factories.",
+      "trend_statement": "Robotics is developing a cloud-like consumption model that can accelerate diffusion.",
+      "material_update_from": null,
+      "source_links": [{"title": "Formic — Oakland automation facility", "url": "https://www.businesswire.com/news/home/20260826975448/en/Formic-Opens-Oakland-Facility-Anchoring-Humanoid-and-Physical-AI-Expansion-in-the-Bay-Area-Alongside-Tesla-and-Amazon", "source_type": "primary-company-announcement", "published_at": "2026-08-26"}],
+      "category_ids": ["robotics-autonomy", "advanced-manufacturing"]
+    },
+    {
+      "rank": 5,
+      "finding_id": "aptiv-nvidia-production-edge-ai-2026-08-26",
+      "event_key": "aptiv-nvidia-production-edge-ai",
+      "headline": "Aptiv pushes NVIDIA edge AI toward production-grade industrial deployment",
+      "summary": "Aptiv announced support for NVIDIA's Jetson Orin Nano 2, extending its effort to turn Jetson hardware into commercially supported production-ready edge-AI platforms.",
+      "why_it_matters": "Aptiv contributes the integration, lifecycle support, safety, and manufacturing-scale deployment capabilities needed to bridge reference hardware and long-lived OEM systems.",
+      "trend_statement": "The physical-AI stack is professionalizing for production deployment at scale.",
+      "material_update_from": null,
+      "source_links": [{"title": "Aptiv — Production-ready edge AI with NVIDIA", "url": "https://www.aptiv.com/en/newsroom/article/aptiv-to-deliver-production-ready-edge-ai-with-long-term-support-with-nvidia", "source_type": "primary-company-announcement", "published_at": "2026-08-26"}],
+      "category_ids": ["ai-computing", "robotics-autonomy", "advanced-manufacturing", "enabling-infrastructure"]
+    }
+  ],
+  "category_assessments": [
+    {"category_id":"ai-computing","category_name":"AI and Computing","direction":"up","velocity_score":2,"confidence":0.93,"evidence":[{"evidence_summary":"IEM committed to a major factory for power systems serving data-center demand.","finding_id":"iem-san-antonio-power-equipment-factory-2026-08-26","source_url":"https://www.iemfg.com/news-stories/iem-announces-200-million-manufacturing-facility-in-san-antonio-creating-jobs-and-expanding-us-production-capacity-to-support-business-growth/","source_type":"primary-company-announcement","published_at":"2026-08-26","reference_run_id":null}],"justification":"Physical capacity expansion showed AI demand propagating into industrial supply.","compared_to_run_id":null,"assessed_at":"2026-08-26T08:31:50-07:00"},
+    {"category_id":"aerospace-space","category_name":"Aerospace and Space","direction":"up","velocity_score":1,"confidence":0.79,"evidence":[{"evidence_summary":"Airbound paired financing with a government deployment agreement.","finding_id":"airbound-andhra-pradesh-deployment-2026-08-26","source_url":"https://www.globenewswire.com/de/news-release/2026/08/25/3350182/0/en/airbound-scales-new-class-of-aircraft-to-change-the-economics-of-flight.html","source_type":"primary-company-announcement","published_at":"2026-08-25","reference_run_id":null}],"justification":"The agreement advanced a novel aircraft from prototype work toward service.","compared_to_run_id":null,"assessed_at":"2026-08-26T08:31:50-07:00"},
+    {"category_id":"robotics-autonomy","category_name":"Robotics and Autonomy","direction":"up","velocity_score":2,"confidence":0.88,"evidence":[{"evidence_summary":"Formic opened deployment capacity for its service-based industrial automation model.","finding_id":"formic-oakland-robotics-facility-2026-08-26","source_url":"https://www.businesswire.com/news/home/20260826975448/en/Formic-Opens-Oakland-Facility-Anchoring-Humanoid-and-Physical-AI-Expansion-in-the-Bay-Area-Alongside-Tesla-and-Amazon","source_type":"primary-company-announcement","published_at":"2026-08-26","reference_run_id":null}],"justification":"Deployment capacity and service economics lowered adoption barriers.","compared_to_run_id":null,"assessed_at":"2026-08-26T08:31:50-07:00"},
+    {"category_id":"advanced-manufacturing","category_name":"Advanced Manufacturing","direction":"up","velocity_score":2,"confidence":0.90,"evidence":[{"evidence_summary":"IEM and Formic expanded physical manufacturing and automation capacity.","finding_id":"iem-san-antonio-power-equipment-factory-2026-08-26","source_url":"https://www.iemfg.com/news-stories/iem-announces-200-million-manufacturing-facility-in-san-antonio-creating-jobs-and-expanding-us-production-capacity-to-support-business-growth/","source_type":"primary-company-announcement","published_at":"2026-08-26","reference_run_id":null}],"justification":"Difficult-to-reverse factory and automation commitments indicated strong progression.","compared_to_run_id":null,"assessed_at":"2026-08-26T08:31:50-07:00"},
+    {"category_id":"energy","category_name":"Energy","direction":"up","velocity_score":1,"confidence":0.80,"evidence":[{"evidence_summary":"IEM expanded production of electrical distribution and control equipment.","finding_id":"iem-san-antonio-power-equipment-factory-2026-08-26","source_url":"https://www.iemfg.com/news-stories/iem-announces-200-million-manufacturing-facility-in-san-antonio-creating-jobs-and-expanding-us-production-capacity-to-support-business-growth/","source_type":"primary-company-announcement","published_at":"2026-08-26","reference_run_id":null}],"justification":"Power-equipment capacity was a positive enabling signal, though not a generation milestone.","compared_to_run_id":null,"assessed_at":"2026-08-26T08:31:50-07:00"},
+    {"category_id":"transportation","category_name":"Transportation","direction":"up","velocity_score":1,"confidence":0.79,"evidence":[{"evidence_summary":"Airbound announced a commercial deployment agreement for its aircraft platform.","finding_id":"airbound-andhra-pradesh-deployment-2026-08-26","source_url":"https://www.globenewswire.com/de/news-release/2026/08/25/3350182/0/en/airbound-scales-new-class-of-aircraft-to-change-the-economics-of-flight.html","source_type":"primary-company-announcement","published_at":"2026-08-25","reference_run_id":null}],"justification":"The deployment agreement was a positive commercialization signal.","compared_to_run_id":null,"assessed_at":"2026-08-26T08:31:50-07:00"},
+    {"category_id":"biotech","category_name":"Biotechnology","direction":"up","velocity_score":2,"confidence":0.95,"evidence":[{"evidence_summary":"The FDA moved zanidatamab into a first-line combination regimen and approved companion diagnostics.","finding_id":"fda-ziihera-first-line-approval-2026-08-26","source_url":"https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-zanidatamab-hrii-and-tislelizumab-jsgr-her2-positive-gastric-gastroesophageal-junction","source_type":"primary-regulatory-announcement","published_at":"2026-08-25","reference_run_id":null}],"justification":"A first-line approval materially broadened commercial use of bispecific antibody technology.","compared_to_run_id":null,"assessed_at":"2026-08-26T08:31:50-07:00"},
+    {"category_id":"enabling-infrastructure","category_name":"Enabling Infrastructure","direction":"up","velocity_score":2,"confidence":0.92,"evidence":[{"evidence_summary":"Electrical capacity and production-supported edge AI advanced together.","finding_id":"aptiv-nvidia-production-edge-ai-2026-08-26","source_url":"https://www.aptiv.com/en/newsroom/article/aptiv-to-deliver-production-ready-edge-ai-with-long-term-support-with-nvidia","source_type":"primary-company-announcement","published_at":"2026-08-26","reference_run_id":null}],"justification":"The run showed infrastructure scaling both below compute and at the production edge.","compared_to_run_id":null,"assessed_at":"2026-08-26T08:31:50-07:00"}
+  ]
+}
