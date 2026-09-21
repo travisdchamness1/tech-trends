@@ -2,60 +2,99 @@
 
 ## Authority and idempotency
 
-Immutable run JSON files are the system of record. The history index and visual are derived artifacts.
+Immutable run JSON files under `data/runs/` are the historical system of record.
 
-Use the scheduled occurrence timestamp as `scheduled_for`. A retry must reuse the same `run_id` and paths. Before research or persistence, check `data/trend-history.json` and the expected immutable path. If that occurrence already succeeded, verify it and stop without adding another run.
+The repository layout is the run index. Do not require or maintain a second canonical run identifier index.
+
+Use the scheduled occurrence timestamp as `scheduled_for`. A retry must reuse the same `run_id` and paths. Before research or persistence:
+
+1. enumerate immutable run records under `data/runs/`;
+2. validate the ledger sufficiently to identify the latest successful run;
+3. check the expected immutable path for the requested occurrence; and
+4. if that `scheduled_for` already succeeded, verify it and stop without adding another run.
+
+Legacy files `data/trend-history.json` and `visuals/trend-velocity-history.html` are non-authoritative and are not part of the scheduled persistence transaction.
 
 ## Read phase
 
-1. Read the `main` branch HEAD commit and tree.
-2. Read and validate the history index, category registry, latest successful immutable run, and all event fingerprints needed for duplicate detection.
-3. Set `window_start` to the previous successful run's `window_end`. If no valid run exists, use and document an explicit fallback.
-4. Set `window_end` to the current observation cutoff.
+1. Read the current `main` branch HEAD.
+2. Read `SKILL.md`, this protocol, `data/category-registry.json`, and `schemas/run.schema.json`.
+3. Discover immutable run paths directly from `data/runs/`.
+4. Read the latest successful immutable run and enough prior findings to enforce stable event identity and material-update linkage.
+5. Set `window_start` to the previous successful run's `window_end`. If no valid run exists, use and document an explicit fallback.
+6. Set `window_end` to the current observation cutoff.
 
 ## Build and validate phase
 
-Build the immutable run JSON, immutable HTML report, complete replacement history index, and complete replacement visual without writing GitHub state.
+Build the immutable run JSON and immutable HTML report without writing GitHub state.
 
 Validate:
 
 - exact schema version and required fields;
 - one to five material findings;
 - one assessment for every canonical category and no extra categories;
-- unique `finding_id`, `event_key`, `run_id`, and `scheduled_for` values where required;
+- globally unique `finding_id` values;
+- unique `run_id` and `scheduled_for` values;
+- stable `event_key` reuse only for a material update;
+- repeated `event_key` observations link to the prior observation with `material_update_from`;
 - nonempty evidence for `up`, `down`, and `flat`; empty evidence for `unknown`;
 - safe source URL schemes and escaped HTML;
-- run/report/index linkage;
-- the current occurrence appears exactly once.
+- run/report linkage; and
+- the current occurrence appears exactly once in the immutable ledger.
 
 ## Preferred atomic write
 
 When Git data tools are available:
 
-1. Create blobs for all changed files.
-2. Create one tree from the previously read base tree.
-3. Create one commit whose parent is the previously read `main` HEAD.
-4. Update `main` to that commit without force.
-5. If the ref update is rejected because `main` changed, discard the proposed ref update, re-read current state, check idempotency, re-merge, and retry at most twice.
+1. create blobs for the immutable run JSON and report;
+2. create one tree from the previously read base tree;
+3. create one commit whose parent is the previously read `main` HEAD;
+4. update `main` to that commit without force; and
+5. if the ref update is rejected because `main` changed, discard the proposed ref update, re-read current state, check idempotency, re-merge, and retry at most twice.
 
 Never force-update `main`.
 
-## Fallback two-phase write
+## Contents API fallback
 
-Use only when the scheduled runtime lacks the preferred Git data operations:
+Use only when the scheduled runtime lacks the preferred Git data operations.
 
-1. Create the immutable run JSON and report if absent.
-2. Re-read state. If either exists, verify exact content before continuing.
-3. Update the history index as the commit point using its exact current blob SHA.
-4. Update the derived visual.
-5. On a later retry, resume the same `scheduled_for` occurrence instead of creating a new run.
+1. Create the immutable run JSON if absent.
+2. Re-read and verify its exact contents.
+3. Create the immutable HTML report if absent.
+4. Re-read and verify its exact contents.
+5. If either file already exists, verify that it exactly matches the proposed occurrence before continuing.
+6. Report partial completion precisely if only one immutable artifact persisted.
 
-The task must report partial completion precisely. A visual lag does not invalidate a committed ledger run, but must be repaired before the next new run.
+A later retry must resume the same `scheduled_for` occurrence instead of creating a new run.
+
+## Derived views
+
+Historical summaries are projections, not persistence dependencies.
+
+- Dashboard clients discover run records directly from the public repository tree.
+- Event history and category velocity series are derived from immutable run records at read/build time.
+- `scripts/discover_runs.py` provides deterministic local/CI discovery.
+- `scripts/validate_repository.py` validates the immutable ledger.
+- `references/dashboard-contract.md` defines the dashboard data-consumption contract.
+- A GitHub Action validates repository state after pushes and pull requests.
+
+No successful scheduled run may be marked failed solely because a dashboard or legacy derived artifact is stale.
 
 ## Recovery
 
-If the derived history is invalid, preserve its exact bytes under `data/recovery/` and rebuild it only from validated immutable run files. If any ledger file is invalid or the set cannot be enumerated completely, stop and request human review. Never reconstruct missing facts from memory.
+If a legacy derived artifact is invalid, ignore it for canonical operations. Reconstruct any needed view only from validated immutable run files.
+
+If any immutable ledger file is invalid or the ledger cannot be enumerated completely, stop and request human review. Never reconstruct missing facts from memory.
 
 ## Verification
 
-Re-read the final branch HEAD and committed tree. Confirm the immutable paths exist, the history contains the occurrence once, the report link resolves, and the visual contains the new run ID. Return the commit SHA and URL on success.
+After persistence:
+
+1. re-read the final branch HEAD or committed immutable files;
+2. confirm the immutable run path exists exactly once;
+3. confirm the committed `scheduled_for` matches the requested occurrence;
+4. confirm the report path resolves;
+5. run repository validation when available; and
+6. return every resulting commit SHA and URL.
+
+The scheduled task does not update a global history index or longitudinal HTML visual.
