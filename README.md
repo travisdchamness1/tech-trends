@@ -12,6 +12,7 @@ The repository is public. Reports and run records must not contain secrets, priv
 - `data/category-registry.json` — canonical category registry
 - `references/persistence-protocol.md` — transaction, idempotency, retry, and recovery rules
 - `references/dashboard-contract.md` — dashboard discovery and rendering contract
+- `references/chatgpt-site-spec.md` — ChatGPT Site implementation and acceptance specification
 
 The repository tree itself is the run index. Consumers discover immutable run files directly under `data/runs/`; no second canonical run-index file is required.
 
