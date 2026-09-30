@@ -42,30 +42,40 @@ Validate:
 - run/report linkage; and
 - the current occurrence appears exactly once in the immutable ledger.
 
-## Preferred atomic write
+## Publication request handoff
 
-When Git data tools are available:
+The scheduled task must submit a complete request rather than writing canonical paths on `main`.
 
-1. create blobs for the immutable run JSON and report;
-2. create one tree from the previously read base tree;
-3. create one commit whose parent is the previously read `main` HEAD;
-4. update `main` to that commit without force; and
-5. if the ref update is rejected because `main` changed, discard the proposed ref update, re-read current state, check idempotency, re-merge, and retry at most twice.
+1. Build `run.json` and `report.html` locally and validate them against this protocol.
+2. Add `publication-request/run.json`, `publication-request/report.html`, and
+   `publication-request/mode.txt` to one Git commit based on current `main`.
+   Set `mode.txt` to exactly `publish` (or `dry-run` for a harmless validation).
+3. Create a new `publication-requests/<name>` branch at that commit. The branch
+   creation triggers `.github/workflows/publish-trend-run.yml`. Git data tools
+   can create both blobs, one tree, one commit, and then the branch. Never use a
+   sequence of Contents API writes to canonical paths on `main`.
+4. If Git data operations are unavailable, prepare the same complete request
+   through another branch or workflow-dispatch handoff. If no complete handoff
+   is possible, return the proposed artifacts and report that publication did
+   not occur.
 
-Never force-update `main`.
+The request branch is staging only. It is not part of the canonical ledger.
 
-## Contents API fallback
+## Publication gate
 
-Use only when the scheduled runtime lacks the preferred Git data operations.
+The publication workflow has `contents: write` and serializes all requests
+through one concurrency group. It reads the request at the triggering commit,
+checks out fresh `main`, and runs `scripts/publish_run.py`. The publisher
+validates the schema, canonical category coverage, unique occurrence and paths,
+event linkage, and report linkage. It refuses overwrites, materializes both
+files locally, and runs repository validation. The workflow then commits both
+paths once, re-fetches `main` immediately before pushing, and uses a normal
+non-force push. If `main` advanced, it fails; rebuild and resubmit the
+request after checking idempotency against the new ledger.
 
-1. Create the immutable run JSON if absent.
-2. Re-read and verify its exact contents.
-3. Create the immutable HTML report if absent.
-4. Re-read and verify its exact contents.
-5. If either file already exists, verify that it exactly matches the proposed occurrence before continuing.
-6. Report partial completion precisely if only one immutable artifact persisted.
-
-A later retry must resume the same `scheduled_for` occurrence instead of creating a new run.
+`validate.yml` remains strict and read-only. GitHub does not automatically
+trigger a second workflow from a `GITHUB_TOKEN` push, so the publication
+workflow itself runs the same repository validator before and after push.
 
 ## Derived views
 
@@ -95,6 +105,8 @@ After persistence:
 3. confirm the committed `scheduled_for` matches the requested occurrence;
 4. confirm the report path resolves;
 5. run repository validation when available; and
-6. return every resulting commit SHA and URL.
+6. return the single publication commit SHA, request branch commit SHA, and
+   workflow URL and result.
 
 The scheduled task does not update a global history index or longitudinal HTML visual.
+

@@ -20,7 +20,7 @@ Produce a materiality-first technology update covering commercialization, deploy
 - Dashboard history, event timelines, and category series must be derived from the immutable ledger at read/build time. See `references/dashboard-contract.md`.
 - Escape untrusted text before generating HTML and allow only `https://` or `http://` source links.
 
-Before any persistence operation, read `references/persistence-protocol.md` and validate the proposed immutable run against `schemas/run.schema.json`.
+Before any persistence operation, read `references/persistence-protocol.md` and validate the proposed immutable run against `schemas/run.schema.json`. Submit both artifacts through the publication-request branch handoff. Do not write canonical run and report paths directly to `main`.
 
 ## Persistence boundary
 
@@ -36,3 +36,4 @@ No history-index rewrite or dashboard regeneration is part of the scheduled-run 
 ## Failure boundary
 
 Never claim persistence without re-reading the resulting Git commit or committed files. If the immutable ledger is malformed or cannot be enumerated completely, fail closed and return the human-readable report plus the exact proposed run JSON.
+

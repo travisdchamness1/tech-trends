@@ -1,0 +1,89 @@
+name: Publish technology-trends run
+
+on:
+  push:
+    branches:
+      - 'publication-requests/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: technology-trends-publication-main
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify request branch
+        shell: bash
+        run: |
+          [[ "$GITHUB_REF" =~ ^refs/heads/publication-requests/[a-z0-9-]+$ ]] ||
+            { echo "Use a publication-requests/<name> branch"; exit 1; }
+      - name: Check out immutable request commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          path: request
+          persist-credentials: false
+      - name: Check out current main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          path: repo
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install schema validator
+        run: python -m pip install jsonschema==4.23.0
+      - name: Validate and materialize both artifacts
+        id: publish
+        shell: bash
+        working-directory: repo
+        run: |
+          set -euo pipefail
+          mode="$(cat ../request/publication-request/mode.txt)"
+          case "$mode" in
+            publish) ;;
+            dry-run) ;;
+            *) echo "mode.txt must be publish or dry-run"; exit 1 ;;
+          esac
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+          args=()
+          if [[ "$mode" == "dry-run" ]]; then args+=(--dry-run); fi
+          python scripts/publish_run.py . \
+            --run-json ../request/publication-request/run.json \
+            --report-html ../request/publication-request/report.html \
+            --github-output "$GITHUB_OUTPUT" "${args[@]}"
+      - name: Commit and push complete publication
+        if: steps.publish.outputs.mode == 'publish'
+        shell: bash
+        working-directory: repo
+        env:
+          RUN_PATH: ${{ steps.publish.outputs.run_path }}
+          REPORT_PATH: ${{ steps.publish.outputs.report_path }}
+        run: |
+          set -euo pipefail
+          test -z "$(git status --porcelain --untracked-files=all | grep -v -E '^\?\? (data/runs/|reports/)' || true)"
+          git add -- "$RUN_PATH" "$REPORT_PATH"
+          test "$(git diff --cached --name-only | wc -l)" -eq 2
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Add Technology Trend Update ${RUN_PATH##*/}"
+          git fetch origin main
+          test "$(git rev-parse origin/main)" = "$(git rev-parse HEAD^)" ||
+            { echo "main advanced; publication must be retried from a fresh request"; exit 1; }
+          git push origin HEAD:refs/heads/main
+          git fetch origin main
+          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
+          python scripts/validate_repository.py .
+      - name: Verify dry run left no canonical changes
+        if: steps.publish.outputs.mode == 'dry-run'
+        shell: bash
+        working-directory: repo
+        run: |
+          test -z "$(git status --porcelain --untracked-files=all)"
+          python scripts/validate_repository.py .
