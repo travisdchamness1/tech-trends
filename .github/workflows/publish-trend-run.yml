@@ -46,6 +46,7 @@ jobs:
         run: |
           set -euo pipefail
           mode="$(cat ../request/publication-request/mode.txt)"
+          mode="${mode%$'\r'}"
           case "$mode" in
             publish) ;;
             dry-run) ;;
