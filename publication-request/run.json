@@ -1,0 +1,297 @@
+{
+  "schema_version": "1.0",
+  "record_type": "technology_trend_run",
+  "timezone": "America/Los_Angeles",
+  "run_id": "technology-trends-2026-10-12",
+  "scheduled_for": "2026-10-12T08:00:00-07:00",
+  "observed_at": "2026-10-12T08:03:53-07:00",
+  "window_start": "2026-10-09T08:06:00-07:00",
+  "window_end": "2026-10-12T08:03:53-07:00",
+  "status": "success",
+  "report_path": "reports/2026/2026-10-12/technology-trend-update-technology-trends-2026-10-12.html",
+  "methodology": {
+    "finding_count": 4,
+    "observation_window_basis": "From latest successful immutable run window_end through current observation cutoff.",
+    "ranking_basis": "Materiality-first ranking of deployment, commercialization, infrastructure, manufacturing and technical milestones.",
+    "source_policy": "Prefer primary sources; independent reporting used when primary release unavailable.",
+    "repeat_policy": "Immutable ledger reviewed; no repeated event keys without material changes.",
+    "selection_focus": [
+      "commercialization",
+      "deployment",
+      "manufacturing capacity",
+      "infrastructure",
+      "regulatory progress"
+    ],
+    "excluded_noise": [
+      "price-only changes",
+      "opinion-only coverage",
+      "minor updates",
+      "older events without material change"
+    ]
+  },
+  "provenance": {
+    "kind": "live-run",
+    "source": "Live research and immutable GitHub ledger.",
+    "imported_at": null,
+    "notes": "Publication-request handoff; no legacy index or visual used."
+  },
+  "findings": [
+    {
+      "rank": 1,
+      "finding_id": "microsoft-maia300-inference-multigigawatt-2026-10-12",
+      "event_key": "microsoft-maia300-inference-multigigawatt",
+      "headline": "Microsoft unveils Maia 300 inference chip and plans multi-gigawatt deployment from 2027",
+      "summary": "Microsoft introduced Maia 300, a custom AI inference system built around N2P chiplets, HBM4 and 96-accelerator racks. Maia 200 is already in production. Microsoft plans multi-gigawatt Maia deployment starting in 2027 and claims 40% more tokens per megawatt than leading GPU systems; that comparison has not been independently verified.",
+      "why_it_matters": "This shifts proprietary inference silicon toward a central hyperscale deployment strategy, making energy efficiency and system-level co-design more important.",
+      "trend_statement": "Hyperscalers are vertically integrating AI inference hardware, software and networking to improve throughput per watt.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Microsoft to expand Azure Maia system to multi-gigawatt deployments",
+          "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-12"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "advanced-manufacturing",
+        "enabling-infrastructure"
+      ]
+    },
+    {
+      "rank": 2,
+      "finding_id": "energyx-trafigura-lithium-dle-offtake-2026-10-12",
+      "event_key": "energyx-trafigura-lithium-dle-offtake",
+      "headline": "EnergyX signs roughly $2 billion, 100,000-tonne lithium offtake agreement",
+      "summary": "EnergyX announced a binding ten-year take-or-pay agreement for Trafigura to purchase 100,000 tonnes of lithium products from planned direct-lithium-extraction operations in Chile and Texas. Production is targeted for 2028 and 2029, respectively. The indicative deal value depends on lithium prices, and project construction still requires additional financing.",
+      "why_it_matters": "A contracted buyer improves the commercialization and financing path for industrial direct lithium extraction but does not eliminate execution risk.",
+      "trend_statement": "Direct lithium extraction is moving toward contracted industrial supply, with financing and plant delivery the next tests.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "EnergyX signs binding $2 billion lithium supply deal with Trafigura",
+          "url": "https://www.reuters.com/business/energy/energyx-signs-binding-2-billion-lithium-supply-deal-with-trafigura-2026-10-12/",
+          "source_type": "independent-news-reporting",
+          "published_at": "2026-10-12"
+        }
+      ],
+      "category_ids": [
+        "energy",
+        "advanced-manufacturing",
+        "enabling-infrastructure"
+      ]
+    },
+    {
+      "rank": 3,
+      "finding_id": "sda-tranche1-fourth-orbital-plane-2026-10-10",
+      "event_key": "sda-tranche1-fourth-orbital-plane",
+      "headline": "Space Development Agency deploys 21 additional Tranche 1 satellites",
+      "summary": "The Space Development Agency confirmed the October 10 launch of 21 Northrop Grumman-built data-transport satellites aboard Falcon 9, delivering the fourth Tranche 1 orbital plane and raising the on-orbit total to 84 vehicles. Initial operational capability is planned for 2027.",
+      "why_it_matters": "This is a completed physical deployment milestone for a resilient, distributed low-Earth-orbit communications architecture.",
+      "trend_statement": "Proliferated satellite networks are progressing through repeatable multi-vendor deployments.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Space Development Agency delivers fourth orbital plane of Tranche 1 satellites",
+          "url": "https://www.sda.mil/pae-for-missile-warning-and-tracking-and-space-development-agency-successfully-deliver-fourth-orbital-plane-of-tranche-1-satellites-to-orbit/",
+          "source_type": "primary-government-announcement",
+          "published_at": "2026-10-10"
+        }
+      ],
+      "category_ids": [
+        "aerospace-space",
+        "enabling-infrastructure"
+      ]
+    },
+    {
+      "rank": 4,
+      "finding_id": "roche-vamikibart-phase3-52week-bla-2026-10-10",
+      "event_key": "roche-vamikibart-phase3-52week-bla",
+      "headline": "Roche reports 52-week vamikibart durability and accepted FDA biologics application",
+      "summary": "Roche reported sustained vision and retinal-thickness benefits in the Phase III MEERKAT and SANDCAT trials of vamikibart for uveitic macular edema. Roughly two-thirds of eligible patients needed no retreatment after week 16. The FDA accepted the application, with a decision expected in July 2027; the medicine remains investigational.",
+      "why_it_matters": "Long-term benefit and lower retreatment burden strengthen the evidence for a potential targeted alternative to steroid-heavy care.",
+      "trend_statement": "Ophthalmic biologics are advancing toward regulatory review with evidence of durable patient benefit.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Roche presents one-year Phase III vamikibart data",
+          "url": "https://rss.globenewswire.com/news-release/2026/10/10/3378468/0/en/roche-presents-new-phase-iii-one-year-data-for-vamikibart-in-uveitic-macular-edema-ume-a-serious-cause-of-vision-loss.html",
+          "source_type": "primary-company-press-release",
+          "published_at": "2026-10-10"
+        }
+      ],
+      "category_ids": [
+        "biotech"
+      ]
+    }
+  ],
+  "category_assessments": [
+    {
+      "category_id": "ai-computing",
+      "category_name": "AI and Computing",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "evidence_summary": "Microsoft unveiled Maia 300 and plans 2027 multi-gigawatt deployments.",
+          "finding_id": "microsoft-maia300-inference-multigigawatt-2026-10-12",
+          "source_url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-12",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Multi-gigawatt custom inference roadmap with Maia 200 already serving production workloads.",
+      "compared_to_run_id": "technology-trends-2026-10-09",
+      "assessed_at": "2026-10-12T08:03:53-07:00"
+    },
+    {
+      "category_id": "aerospace-space",
+      "category_name": "Aerospace and Space",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "evidence_summary": "Twenty-one new data-transport satellites brought the Tranche 1 total to 84.",
+          "finding_id": "sda-tranche1-fourth-orbital-plane-2026-10-10",
+          "source_url": "https://www.sda.mil/pae-for-missile-warning-and-tracking-and-space-development-agency-successfully-deliver-fourth-orbital-plane-of-tranche-1-satellites-to-orbit/",
+          "source_type": "primary-government-announcement",
+          "published_at": "2026-10-10",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "The fourth orbital plane is a completed deployment rather than an announced future project.",
+      "compared_to_run_id": "technology-trends-2026-10-09",
+      "assessed_at": "2026-10-12T08:03:53-07:00"
+    },
+    {
+      "category_id": "robotics-autonomy",
+      "category_name": "Robotics and Autonomy",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.78,
+      "evidence": [],
+      "justification": "No qualifying robotics deployment was found within this observation window.",
+      "compared_to_run_id": "technology-trends-2026-10-09",
+      "assessed_at": "2026-10-12T08:03:53-07:00"
+    },
+    {
+      "category_id": "advanced-manufacturing",
+      "category_name": "Advanced Manufacturing",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.87,
+      "evidence": [
+        {
+          "evidence_summary": "Maia 300 uses advanced chiplet integration with planned 2027 production.",
+          "finding_id": "microsoft-maia300-inference-multigigawatt-2026-10-12",
+          "source_url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-12",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "EnergyX has a ten-year contracted customer for planned DLE production.",
+          "finding_id": "energyx-trafigura-lithium-dle-offtake-2026-10-12",
+          "source_url": "https://www.reuters.com/business/energy/energyx-signs-binding-2-billion-lithium-supply-deal-with-trafigura-2026-10-12/",
+          "source_type": "independent-news-reporting",
+          "published_at": "2026-10-12",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "New custom chiplet production plans and contracted industrial lithium supply support manufacturing progress, subject to execution.",
+      "compared_to_run_id": "technology-trends-2026-10-09",
+      "assessed_at": "2026-10-12T08:03:53-07:00"
+    },
+    {
+      "category_id": "energy",
+      "category_name": "Energy",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "evidence_summary": "Trafigura signed a ten-year binding lithium offtake agreement for future DLE output.",
+          "finding_id": "energyx-trafigura-lithium-dle-offtake-2026-10-12",
+          "source_url": "https://www.reuters.com/business/energy/energyx-signs-binding-2-billion-lithium-supply-deal-with-trafigura-2026-10-12/",
+          "source_type": "independent-news-reporting",
+          "published_at": "2026-10-12",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Long-term contracted lithium supply is a material battery supply-chain signal, although plants are not yet built.",
+      "compared_to_run_id": "technology-trends-2026-10-09",
+      "assessed_at": "2026-10-12T08:03:53-07:00"
+    },
+    {
+      "category_id": "transportation",
+      "category_name": "Transportation",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.77,
+      "evidence": [],
+      "justification": "No direct transportation-system development cleared the materiality threshold.",
+      "compared_to_run_id": "technology-trends-2026-10-09",
+      "assessed_at": "2026-10-12T08:03:53-07:00"
+    },
+    {
+      "category_id": "biotech",
+      "category_name": "Biotechnology",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.91,
+      "evidence": [
+        {
+          "evidence_summary": "Roche reported sustained 52-week vamikibart benefits and FDA acceptance of its biologics application.",
+          "finding_id": "roche-vamikibart-phase3-52week-bla-2026-10-10",
+          "source_url": "https://rss.globenewswire.com/news-release/2026/10/10/3378468/0/en/roche-presents-new-phase-iii-one-year-data-for-vamikibart-in-uveitic-macular-edema-ume-a-serious-cause-of-vision-loss.html",
+          "source_type": "primary-company-press-release",
+          "published_at": "2026-10-10",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Phase III one-year durability evidence and FDA application acceptance are meaningful clinical and regulatory milestones.",
+      "compared_to_run_id": "technology-trends-2026-10-09",
+      "assessed_at": "2026-10-12T08:03:53-07:00"
+    },
+    {
+      "category_id": "enabling-infrastructure",
+      "category_name": "Enabling Infrastructure",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "evidence_summary": "Microsoft outlined multi-gigawatt Maia inference deployment.",
+          "finding_id": "microsoft-maia300-inference-multigigawatt-2026-10-12",
+          "source_url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-12",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "EnergyX secured a binding lithium supply customer.",
+          "finding_id": "energyx-trafigura-lithium-dle-offtake-2026-10-12",
+          "source_url": "https://www.reuters.com/business/energy/energyx-signs-binding-2-billion-lithium-supply-deal-with-trafigura-2026-10-12/",
+          "source_type": "independent-news-reporting",
+          "published_at": "2026-10-12",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "SDA deployed 21 more data-transport satellites.",
+          "finding_id": "sda-tranche1-fourth-orbital-plane-2026-10-10",
+          "source_url": "https://www.sda.mil/pae-for-missile-warning-and-tracking-and-space-development-agency-successfully-deliver-fourth-orbital-plane-of-tranche-1-satellites-to-orbit/",
+          "source_type": "primary-government-announcement",
+          "published_at": "2026-10-10",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Inference compute infrastructure, lithium supply infrastructure and satellite-network deployment all materially advanced.",
+      "compared_to_run_id": "technology-trends-2026-10-09",
+      "assessed_at": "2026-10-12T08:03:53-07:00"
+    }
+  ]
+}
