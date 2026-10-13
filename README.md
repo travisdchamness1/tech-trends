@@ -2,8 +2,6 @@
 
 Persistent, auditable artifacts for the weekday **Technology Trend Update** scheduled task.
 
-The repository is public. Reports and run records must not contain secrets, private account data, or unpublished personal information.
-
 ## Canonical data model
 
 - `data/runs/YYYY/YYYY-MM-DD/<run_id>.json` — authoritative immutable run ledger
