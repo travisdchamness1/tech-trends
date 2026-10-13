@@ -1,0 +1,319 @@
+{
+  "schema_version": "1.0",
+  "record_type": "technology_trend_run",
+  "timezone": "America/Los_Angeles",
+  "run_id": "technology-trends-2026-10-13",
+  "scheduled_for": "2026-10-13T08:00:00-07:00",
+  "observed_at": "2026-10-13T07:59:17-07:00",
+  "window_start": "2026-10-12T08:03:53-07:00",
+  "window_end": "2026-10-13T07:59:17-07:00",
+  "status": "success",
+  "report_path": "reports/2026/2026-10-13/technology-trend-update-technology-trends-2026-10-13.html",
+  "methodology": {
+    "finding_count": 5,
+    "observation_window_basis": "From the latest successful immutable run window_end (2026-10-12 08:03:53 PDT) to the 2026-10-13 07:59:17 PDT observation cutoff; October 12 announcements and October 13 early releases were checked against primary sources.",
+    "ranking_basis": "Rank materiality by pivotal clinical evidence, funded strategic industrial action, regulatory milestones, infrastructure deployment specificity and commercialization significance; do not rank by stock-price movement.",
+    "source_policy": "Primary company and regulator sources preferred; distinguish announced plans from completed deployments and note unresolved efficacy or approval details.",
+    "repeat_policy": "All 19 discovered immutable run records were reviewed for event identities; no prior event is repeated without a material update.",
+    "selection_focus": [
+      "commercialization",
+      "deployment",
+      "advanced manufacturing",
+      "infrastructure",
+      "strategic acquisitions",
+      "regulatory milestones",
+      "meaningful clinical trial results"
+    ],
+    "excluded_noise": [
+      "stock-price movements without fundamental change",
+      "opinion-only coverage",
+      "minor product refreshes",
+      "routine personnel announcements",
+      "events already recorded without material change"
+    ]
+  },
+  "provenance": {
+    "kind": "live-run",
+    "source": "Current primary-source research and the immutable GitHub ledger.",
+    "imported_at": null,
+    "notes": "Publication-request handoff; no legacy history index or longitudinal visual was read or rewritten. Report distinguishes future deployment plans from completed milestones."
+  },
+  "findings": [
+    {
+      "rank": 1,
+      "finding_id": "bms-ryz101-action1-phase3-actinium225-2026-10-12",
+      "event_key": "bms-ryz101-action1-phase3-actinium225",
+      "headline": "Bristol Myers Squibb's actinium-225 radiopharmaceutical meets Phase 3 cancer trial endpoint",
+      "summary": "Bristol Myers Squibb reported that RYZ101 (225Ac-DOTATATE) met the progression-free survival primary endpoint at the planned interim analysis of the randomized Phase 3 ACTION-1 trial in patients with somatostatin receptor-positive gastroenteropancreatic neuroendocrine tumors progressing after lutetium-177 therapy. The company describes these as the first Phase 3 results for an alpha-emitting targeted radiopharmaceutical. Detailed efficacy estimates have not yet been released; the therapy remains investigational.",
+      "why_it_matters": "A positive randomized late-stage result validates a new therapeutic modality in patients with few options after prior radiopharmaceutical therapy, although regulatory approval and manufacturing scale-up remain ahead.",
+      "trend_statement": "Targeted alpha-emitting radiopharmaceuticals are moving beyond early clinical evidence into pivotal trial success.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Bristol Myers Squibb announces positive Phase 3 ACTION-1 interim results for RYZ101",
+          "url": "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-12"
+        }
+      ],
+      "category_ids": [
+        "biotech"
+      ]
+    },
+    {
+      "rank": 2,
+      "finding_id": "omron-onlogic-675m-physical-ai-acquisition-2026-10-12",
+      "event_key": "omron-onlogic-physical-ai-acquisition",
+      "headline": "Omron agrees to acquire OnLogic's industrial-computing group for $675 million",
+      "summary": "Omron disclosed an agreement to acquire Interlogic and its OnLogic industrial-PC subsidiaries for a $675 million debt-free, cash-free enterprise value. The intended integration pairs OnLogic's rugged industrial computing with Omron's sensing, robotics and precision controls to develop physical-AI and factory-automation platforms. The acquisition is expected to close around January 2027, subject to approvals and customary conditions.",
+      "why_it_matters": "This is a funded acquisition rather than a laboratory demonstration, strengthening the hardware and distribution layer needed to deploy AI systems into industrial environments.",
+      "trend_statement": "Industrial automation vendors are acquiring embedded-compute capabilities to integrate sensing, control and AI execution at the factory edge.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Omron agreement to acquire OnLogic and Interlogic",
+          "url": "https://www.omron.com/global/en/news/2026/10/c1013.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-12"
+        }
+      ],
+      "category_ids": [
+        "robotics-autonomy",
+        "advanced-manufacturing",
+        "ai-computing"
+      ]
+    },
+    {
+      "rank": 3,
+      "finding_id": "formycon-zydus-fyb206-keytruda-biosimilar-fda-2026-10-13",
+      "event_key": "formycon-zydus-fyb206-keytruda-biosimilar",
+      "headline": "FDA accepts first publicly announced Keytruda biosimilar application for review",
+      "summary": "Formycon and Zydus announced FDA acceptance of the FYB206 biologics license application for a proposed pembrolizumab (Keytruda) biosimilar. The companies say this is the first publicly announced FDA filing acceptance for a Keytruda biosimilar. They followed a regulator-agreed development path without a comparative Phase 3 efficacy trial. A regulatory decision is expected in the third quarter of 2027; approval and commercialization are not yet assured.",
+      "why_it_matters": "Regulatory acceptance creates a concrete path toward competition for a high-revenue cancer biologic and illustrates the increasing use of analytical and streamlined clinical evidence in biosimilar development.",
+      "trend_statement": "Biosimilar competition is advancing into major oncology biologics through streamlined regulatory evidence packages.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Formycon and Zydus: FYB206 accepted for FDA review",
+          "url": "https://www.formycon.com/en/blog/press-release/formycon-and-zydus-fyb206-becomes-first-publicly-announced-keytruda-biosimilar-accepted-for-review-by-fda/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-13"
+        }
+      ],
+      "category_ids": [
+        "biotech"
+      ]
+    },
+    {
+      "rank": 4,
+      "finding_id": "amd-helion-agentic-ai-rack-open-blueprint-2026-10-12",
+      "event_key": "amd-helion-agentic-ai-rack",
+      "headline": "AMD introduces open rack-scale architecture dedicated to agentic AI workloads",
+      "summary": "AMD introduced Helion, an Open Compute Project specification-based rack design that separates CPU-intensive agent execution from GPU inference. The blueprint supports CPU-only hyperscale racks with up to 32,768 EPYC cores or integrated enterprise racks with Instinct MI350P GPUs and a token router. AMD plans to contribute the specification to OCP; partner configurations are under development and expected to be available in November 2026.",
+      "why_it_matters": "The design treats agent orchestration, code execution and inference as distinct compute demands, potentially improving data-center utilization and challenging one-size-fits-all GPU-centric architectures. Availability is planned, not a completed deployment.",
+      "trend_statement": "Agentic AI is creating a specialized infrastructure layer that allocates CPU, GPU, networking and power according to different execution stages.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Introducing AMD Helion, Agentic AI Compute at Rack Scale",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-12"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "enabling-infrastructure"
+      ]
+    },
+    {
+      "rank": 5,
+      "finding_id": "scaleway-amd-sweden-commercial-ai-supercomputer-2026-10-13",
+      "event_key": "scaleway-amd-sweden-commercial-ai-supercomputer",
+      "headline": "Scaleway expands European AI compute with first commercial AMD supercomputer in Sweden",
+      "summary": "Scaleway announced plans to deploy an AMD Instinct MI355X and ROCm-based AI supercomputer in Sweden, its first supercomputer outside France. The company describes the system as Europe's first commercial AMD AI supercomputer, targeting access for startups, enterprises and AI developers. Bull will integrate and maintain the cluster, with additional server, networking, storage and cooling partners. The announcement does not establish that the new system is operational yet.",
+      "why_it_matters": "A second European cloud provider path for high-performance AI infrastructure diversifies accelerator supply and creates a regional alternative to NVIDIA-centric cloud capacity.",
+      "trend_statement": "Regional cloud providers are expanding sovereign and multi-vendor AI infrastructure beyond the largest hyperscalers.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Scaleway expands AI infrastructure in Europe with AMD-based supercomputer in Sweden",
+          "url": "https://www.scaleway.com/en/news/scaleway-expands-ai-infrastructure-in-europe-with-new-amd-instinct-gpu-based-supercomputer-in-sweden/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-13"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "enabling-infrastructure"
+      ]
+    }
+  ],
+  "category_assessments": [
+    {
+      "category_id": "ai-computing",
+      "category_name": "AI and Computing",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "evidence_summary": "Omron's $675 million OnLogic acquisition is intended to combine rugged industrial computing with sensing and physical-AI control.",
+          "finding_id": "omron-onlogic-675m-physical-ai-acquisition-2026-10-12",
+          "source_url": "https://www.omron.com/global/en/news/2026/10/c1013.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-12",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "AMD's Helion design disaggregates agent execution from inference and has partner configurations planned for November.",
+          "finding_id": "amd-helion-agentic-ai-rack-open-blueprint-2026-10-12",
+          "source_url": "https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-12",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Scaleway is deploying an AMD MI355X-based commercial AI supercomputer in Sweden.",
+          "finding_id": "scaleway-amd-sweden-commercial-ai-supercomputer-2026-10-13",
+          "source_url": "https://www.scaleway.com/en/news/scaleway-expands-ai-infrastructure-in-europe-with-new-amd-instinct-gpu-based-supercomputer-in-sweden/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-13",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Two distinct rack-scale compute infrastructure initiatives plus a strategic industrial-compute acquisition support a strong upward AI-computing signal, though deployments remain in progress.",
+      "compared_to_run_id": "technology-trends-2026-10-12",
+      "assessed_at": "2026-10-13T07:59:17-07:00"
+    },
+    {
+      "category_id": "aerospace-space",
+      "category_name": "Aerospace and Space",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.76,
+      "evidence": [],
+      "justification": "No newly reported aerospace or space development in the observation window was selected above the materiality threshold; this is not evidence of sector decline.",
+      "compared_to_run_id": "technology-trends-2026-10-12",
+      "assessed_at": "2026-10-13T07:59:17-07:00"
+    },
+    {
+      "category_id": "robotics-autonomy",
+      "category_name": "Robotics and Autonomy",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.91,
+      "evidence": [
+        {
+          "evidence_summary": "Omron's agreed acquisition brings industrial computing into its robotics and precision-control portfolio for future physical-AI platforms.",
+          "finding_id": "omron-onlogic-675m-physical-ai-acquisition-2026-10-12",
+          "source_url": "https://www.omron.com/global/en/news/2026/10/c1013.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-12",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Omron's agreed acquisition materially strengthens its intended physical-AI industrial robotics stack, but integration and commercial deployments are future milestones.",
+      "compared_to_run_id": "technology-trends-2026-10-12",
+      "assessed_at": "2026-10-13T07:59:17-07:00"
+    },
+    {
+      "category_id": "advanced-manufacturing",
+      "category_name": "Advanced Manufacturing",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.89,
+      "evidence": [
+        {
+          "evidence_summary": "Omron's industrial-computing acquisition is designed to accelerate integration of factory automation, sensing and AI at the manufacturing edge.",
+          "finding_id": "omron-onlogic-675m-physical-ai-acquisition-2026-10-12",
+          "source_url": "https://www.omron.com/global/en/news/2026/10/c1013.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-12",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Omron's $675 million acquisition represents a substantive industrial automation hardware integration commitment, pending closing.",
+      "compared_to_run_id": "technology-trends-2026-10-12",
+      "assessed_at": "2026-10-13T07:59:17-07:00"
+    },
+    {
+      "category_id": "energy",
+      "category_name": "Energy",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.74,
+      "evidence": [],
+      "justification": "No independent energy-sector milestone in the observation window cleared the materiality threshold.",
+      "compared_to_run_id": "technology-trends-2026-10-12",
+      "assessed_at": "2026-10-13T07:59:17-07:00"
+    },
+    {
+      "category_id": "transportation",
+      "category_name": "Transportation",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.75,
+      "evidence": [],
+      "justification": "No qualifying transportation-specific milestone was selected for this observation window.",
+      "compared_to_run_id": "technology-trends-2026-10-12",
+      "assessed_at": "2026-10-13T07:59:17-07:00"
+    },
+    {
+      "category_id": "biotech",
+      "category_name": "Biotechnology",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.97,
+      "evidence": [
+        {
+          "evidence_summary": "RYZ101 met the progression-free survival endpoint in a randomized Phase 3 trial of actinium-225 targeted radiopharmaceutical therapy.",
+          "finding_id": "bms-ryz101-action1-phase3-actinium225-2026-10-12",
+          "source_url": "https://news.bms.com/news/details/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-12",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "FDA accepted FYB206's Keytruda biosimilar biologics application for review without a comparative Phase 3 efficacy trial.",
+          "finding_id": "formycon-zydus-fyb206-keytruda-biosimilar-fda-2026-10-13",
+          "source_url": "https://www.formycon.com/en/blog/press-release/formycon-and-zydus-fyb206-becomes-first-publicly-announced-keytruda-biosimilar-accepted-for-review-by-fda/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-13",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Independent pivotal cancer-therapy evidence and a first publicly reported major-oncology biosimilar regulatory acceptance represent two high-materiality biotechnology milestones.",
+      "compared_to_run_id": "technology-trends-2026-10-12",
+      "assessed_at": "2026-10-13T07:59:17-07:00"
+    },
+    {
+      "category_id": "enabling-infrastructure",
+      "category_name": "Enabling Infrastructure",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "evidence_summary": "AMD introduced an OCP-based agentic AI rack blueprint with separate CPU and GPU deployment options.",
+          "finding_id": "amd-helion-agentic-ai-rack-open-blueprint-2026-10-12",
+          "source_url": "https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-12",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Scaleway announced an AMD-based commercial AI supercomputer deployment in Sweden with a named integrator and hardware partners.",
+          "finding_id": "scaleway-amd-sweden-commercial-ai-supercomputer-2026-10-13",
+          "source_url": "https://www.scaleway.com/en/news/scaleway-expands-ai-infrastructure-in-europe-with-new-amd-instinct-gpu-based-supercomputer-in-sweden/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-13",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "AMD's new agentic rack design and Scaleway's planned Swedish AI supercomputer materially advance AI infrastructure options, though the deployments are not yet completed.",
+      "compared_to_run_id": "technology-trends-2026-10-12",
+      "assessed_at": "2026-10-13T07:59:17-07:00"
+    }
+  ]
+}
