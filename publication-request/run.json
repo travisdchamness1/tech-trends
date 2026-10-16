@@ -1,0 +1,305 @@
+{
+  "schema_version": "1.0",
+  "record_type": "technology_trend_run",
+  "timezone": "America/Los_Angeles",
+  "run_id": "technology-trends-2026-10-16",
+  "scheduled_for": "2026-10-16T08:00:00-07:00",
+  "observed_at": "2026-10-16T08:03:51-07:00",
+  "window_start": "2026-10-15T08:01:57-07:00",
+  "window_end": "2026-10-16T08:03:51-07:00",
+  "status": "success",
+  "report_path": "reports/2026/2026-10-16/technology-trend-update-technology-trends-2026-10-16.html",
+  "methodology": {
+    "finding_count": 4,
+    "observation_window_basis": "Window starts at the latest successful immutable run's window_end (2026-10-15 08:01:57 PDT) and ends at the scheduled-run observation cutoff (2026-10-16 08:03:51 PDT).",
+    "ranking_basis": "Rank by material commercialization, deployable releases, infrastructure contracts, policy changes and reproducible technical capability, not popularity.",
+    "source_policy": "Prefer primary government, company, technical research and open-source engineering sources.",
+    "repeat_policy": "All 22 immutable ledger run identities were checked; no event key is repeated in this run. Material updates require stable event_key and material_update_from.",
+    "selection_focus": [
+      "commercialization",
+      "deployment",
+      "manufacturing capacity",
+      "infrastructure",
+      "strategic partnerships",
+      "geographic expansion",
+      "regulatory approval",
+      "meaningful technical milestones",
+      "technology-export policy"
+    ],
+    "excluded_noise": [
+      "routine launches",
+      "speculative partnerships",
+      "price-only news",
+      "earlier announcements",
+      "unsupported marketing claims"
+    ]
+  },
+  "provenance": {
+    "kind": "live-run",
+    "source": "Weekday Technology Trend Update; primary public-source research and immutable GitHub ledger.",
+    "imported_at": null,
+    "notes": "Published via request-branch gate only. No legacy history or longitudinal visual used. Vendor claims and project plans distinguished from verified deployments."
+  },
+  "findings": [
+    {
+      "rank": 1,
+      "finding_id": "china-draft-export-controls-ai-chip-solar-biomed-2026-10-16",
+      "event_key": "china-draft-40-technology-export-controls",
+      "headline": "China proposes controls on 40 strategic technologies, including 23 AI categories, with immediate pre-export registration",
+      "summary": "On October 16 China's commerce and science ministries published a draft export-catalogue revision covering 40 technologies in AI, biomedicine and photovoltaics. Twenty-three AI categories include foundation models, agents and computing clusters. A temporary pre-export registration process applies to covered transfers; publicly released open-source technologies and published research are exempt. Consultation continues until November 15.",
+      "why_it_matters": "The proposed restrictions could materially alter cross-border commercialization of advanced AI, semiconductor design, gene-therapy and solar manufacturing know-how. The prohibitions and restrictions are proposals, not final rules.",
+      "trend_statement": "Frontier AI and industrial know-how are becoming increasingly explicit objects of technology-sovereignty and export-control policy.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "China Ministry of Commerce and Ministry of Science and Technology Announcement No. 48",
+          "url": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2026/art_61446ab4beee4f63973d4d0ab3097648.html",
+          "source_type": "primary-government-announcement",
+          "published_at": "2026-10-16"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "advanced-manufacturing",
+        "enabling-infrastructure"
+      ]
+    },
+    {
+      "rank": 2,
+      "finding_id": "meta-muse-spark-open-apple-mlx-distributed-2026-10-15",
+      "event_key": "meta-muse-spark-open-weights-apple-mlx",
+      "headline": "Meta releases 816B-parameter open-weight Muse Spark Open; Apple demonstrates distributed local inference",
+      "summary": "Meta released Muse Spark Open on October 15: a sparse mixture-of-experts model with 816 billion total and approximately 42 billion active parameters per token, one million tokens of context and multimodal inputs, designed for coding and agentic work. Apple documented distributed inference with MLX across M5 Ultra Mac Studios, reporting more than 36 generated tokens per second using four machines. Meta's Muse Model License has commercial limitations.",
+      "why_it_matters": "A substantial agent-oriented model is now available for user-controlled deployment, while Apple's measured desktop-cluster inference demonstrates a practical local hosting path. Vendor benchmark results do not establish independent real-world task performance.",
+      "trend_statement": "Open-weight frontier-scale models and distributed local inference are expanding deployment choices for agentic systems.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Meta: Build with Muse Spark Open",
+          "url": "https://dev.meta.ai/resources/blog/build-with-muse-spark-open",
+          "source_type": "primary-company-technical-release",
+          "published_at": "2026-10-15"
+        },
+        {
+          "title": "Apple: Local and Distributed Large LLM Inference with MLX and RDMA",
+          "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+          "source_type": "primary-research-technical-report",
+          "published_at": "2026-10-15"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "enabling-infrastructure"
+      ]
+    },
+    {
+      "rank": 3,
+      "finding_id": "rosatom-indonesia-200mw-floating-nuclear-export-2026-10-16",
+      "event_key": "rosatom-indonesia-floating-nuclear-power-contract",
+      "headline": "Rosatom and Indonesia sign first export agreement for 200 MW of floating nuclear generation",
+      "summary": "Rosatom and Indonesia's PT Pembangkit Listrik Nuklir signed an October 16 agreement for two PEB-100 floating nuclear units totaling 200 MW to supply North Halmahera in North Maluku. The RITM-family reactor project is presented as privately financed; first electricity is projected about five years after the principal supply-contract terms take effect.",
+      "why_it_matters": "The agreement takes floating modular nuclear power beyond domestic operation and preliminary international discussions into a signed cross-border commercial project. Licensing, construction, financing and execution remain outstanding.",
+      "trend_statement": "Modular floating nuclear plants are entering international commercial energy-infrastructure agreements for remote and islanded grids.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Rosatom Atom Media: Floating nuclear power agreement with Indonesia",
+          "url": "https://atommedia.online/press-releases/rosatom-i-indoneziya-dogovorilis-o-realizatsii-pervogo-v-mire-eksportnogo-proekta-po-postavke-elektr/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-16"
+        }
+      ],
+      "category_ids": [
+        "energy",
+        "enabling-infrastructure"
+      ]
+    },
+    {
+      "rank": 4,
+      "finding_id": "roboparty-rp1-full-stack-open-humanoid-2026-10-15",
+      "event_key": "roboparty-rp1-full-stack-open-source-release",
+      "headline": "RoboParty publishes an open hardware-to-learning stack for its RP1 humanoid research platform",
+      "summary": "RoboParty launched the RP1 full-stack open-source humanoid platform on October 15, releasing mechanical design resources, actuator and firmware components, low-level control, robot descriptions, simulation, deployment SDKs and training workflows. Research variants have 24 and 30 actuated degrees of freedom; public GitHub repositories provide inspectable engineering artifacts. Performance and reliability claims remain vendor-reported.",
+      "why_it_matters": "Inspectable hardware-to-learning boundaries let independent teams reproduce experiments and trace faults across mechanical, control and learning subsystems rather than relying on closed robot interfaces.",
+      "trend_statement": "Embodied-AI development is gaining reproducible open hardware and software foundations instead of only proprietary demonstrations.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "RoboParty: RP1 full-stack open-source humanoid launch",
+          "url": "https://www.prnewswire.com/news-releases/born-to-be-open-roboparty-launches-rp1-a-full-stack-open-source-humanoid-302910163.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-15"
+        },
+        {
+          "title": "RoboParty RP1 engineering repository",
+          "url": "https://github.com/Roboparty/RP1",
+          "source_type": "primary-open-source-repository",
+          "published_at": null
+        }
+      ],
+      "category_ids": [
+        "robotics-autonomy",
+        "advanced-manufacturing"
+      ]
+    }
+  ],
+  "category_assessments": [
+    {
+      "category_id": "ai-computing",
+      "category_name": "AI and Computing",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "evidence_summary": "Meta released a large open-weight agent-capable model and Apple demonstrated local distributed inference.",
+          "finding_id": "meta-muse-spark-open-apple-mlx-distributed-2026-10-15",
+          "source_url": "https://dev.meta.ai/resources/blog/build-with-muse-spark-open",
+          "source_type": "primary-company-technical-release",
+          "published_at": "2026-10-15",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "China proposed new controls on 23 AI technology categories, including models, agents and computing clusters.",
+          "finding_id": "china-draft-export-controls-ai-chip-solar-biomed-2026-10-16",
+          "source_url": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2026/art_61446ab4beee4f63973d4d0ab3097648.html",
+          "source_type": "primary-government-announcement",
+          "published_at": "2026-10-16",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "A major open-weight release advances deployable AI, while proposed export controls increase strategic friction. Up reflects activity and technical momentum, not unrestricted access.",
+      "compared_to_run_id": "technology-trends-2026-10-15",
+      "assessed_at": "2026-10-16T08:03:51-07:00"
+    },
+    {
+      "category_id": "aerospace-space",
+      "category_name": "Aerospace and Space",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.77,
+      "evidence": [],
+      "justification": "No aerospace or space development inside the observation window cleared the materiality threshold.",
+      "compared_to_run_id": "technology-trends-2026-10-15",
+      "assessed_at": "2026-10-16T08:03:51-07:00"
+    },
+    {
+      "category_id": "robotics-autonomy",
+      "category_name": "Robotics and Autonomy",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.91,
+      "evidence": [
+        {
+          "evidence_summary": "RoboParty released inspectable hardware, firmware, control and learning resources for a humanoid research platform.",
+          "finding_id": "roboparty-rp1-full-stack-open-humanoid-2026-10-15",
+          "source_url": "https://www.prnewswire.com/news-releases/born-to-be-open-roboparty-launches-rp1-a-full-stack-open-source-humanoid-302910163.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-15",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "A concrete open humanoid engineering stack broadens embodied-AI research access, although independent performance validation remains limited.",
+      "compared_to_run_id": "technology-trends-2026-10-15",
+      "assessed_at": "2026-10-16T08:03:51-07:00"
+    },
+    {
+      "category_id": "advanced-manufacturing",
+      "category_name": "Advanced Manufacturing",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.82,
+      "evidence": [
+        {
+          "evidence_summary": "RoboParty released mechanical designs, electronics and actuator resources for reproducible robotics engineering.",
+          "finding_id": "roboparty-rp1-full-stack-open-humanoid-2026-10-15",
+          "source_url": "https://www.prnewswire.com/news-releases/born-to-be-open-roboparty-launches-rp1-a-full-stack-open-source-humanoid-302910163.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-15",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "China's draft export catalogue covers strategic industrial technologies, including selected chip-design and photovoltaic manufacturing know-how.",
+          "finding_id": "china-draft-export-controls-ai-chip-solar-biomed-2026-10-16",
+          "source_url": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2026/art_61446ab4beee4f63973d4d0ab3097648.html",
+          "source_type": "primary-government-announcement",
+          "published_at": "2026-10-16",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Open robotics manufacturing resources improve reproducibility while the export proposal underscores rising constraints on industrial technology transfer.",
+      "compared_to_run_id": "technology-trends-2026-10-15",
+      "assessed_at": "2026-10-16T08:03:51-07:00"
+    },
+    {
+      "category_id": "energy",
+      "category_name": "Energy",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "evidence_summary": "Rosatom and its Indonesian counterparty signed a project agreement for two floating nuclear units totaling 200 MW.",
+          "finding_id": "rosatom-indonesia-200mw-floating-nuclear-export-2026-10-16",
+          "source_url": "https://atommedia.online/press-releases/rosatom-i-indoneziya-dogovorilis-o-realizatsii-pervogo-v-mire-eksportnogo-proekta-po-postavke-elektr/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-16",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "A signed first-of-kind cross-border floating-nuclear project is a substantial commercialization step; no generation is yet online.",
+      "compared_to_run_id": "technology-trends-2026-10-15",
+      "assessed_at": "2026-10-16T08:03:51-07:00"
+    },
+    {
+      "category_id": "transportation",
+      "category_name": "Transportation",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.77,
+      "evidence": [],
+      "justification": "No transportation deployment or production milestone inside the window cleared the materiality threshold.",
+      "compared_to_run_id": "technology-trends-2026-10-15",
+      "assessed_at": "2026-10-16T08:03:51-07:00"
+    },
+    {
+      "category_id": "biotech",
+      "category_name": "Biotechnology",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.76,
+      "evidence": [],
+      "justification": "The export-control proposal mentions biomedicine but is not a clinical, approval or manufacturing milestone; no biotech development cleared the threshold.",
+      "compared_to_run_id": "technology-trends-2026-10-15",
+      "assessed_at": "2026-10-16T08:03:51-07:00"
+    },
+    {
+      "category_id": "enabling-infrastructure",
+      "category_name": "Enabling Infrastructure",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.92,
+      "evidence": [
+        {
+          "evidence_summary": "Apple demonstrated distributed local inference of Meta's open-weight model using Mac Studio clusters.",
+          "finding_id": "meta-muse-spark-open-apple-mlx-distributed-2026-10-15",
+          "source_url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+          "source_type": "primary-research-technical-report",
+          "published_at": "2026-10-15",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "The Indonesian floating-nuclear agreement provides a commercial pathway to 200 MW of modular power capacity.",
+          "finding_id": "rosatom-indonesia-200mw-floating-nuclear-export-2026-10-16",
+          "source_url": "https://atommedia.online/press-releases/rosatom-i-indoneziya-dogovorilis-o-realizatsii-pervogo-v-mire-eksportnogo-proekta-po-postavke-elektr/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-16",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Independent developments expand AI deployment infrastructure and remote-grid firm-power pathways, with remaining operational and execution caveats.",
+      "compared_to_run_id": "technology-trends-2026-10-15",
+      "assessed_at": "2026-10-16T08:03:51-07:00"
+    }
+  ]
+}
