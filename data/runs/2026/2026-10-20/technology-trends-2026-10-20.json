@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0",
+  "record_type": "technology_trend_run",
+  "timezone": "America/Los_Angeles",
+  "run_id": "technology-trends-2026-10-20",
+  "scheduled_for": "2026-10-20T08:00:00-07:00",
+  "observed_at": "2026-10-20T08:03:09-07:00",
+  "window_start": "2026-10-19T08:00:35-07:00",
+  "window_end": "2026-10-20T08:03:09-07:00",
+  "status": "success",
+  "report_path": "reports/2026/2026-10-20/technology-trend-update-technology-trends-2026-10-20.html",
+  "methodology": {
+    "finding_count": 4,
+    "observation_window_basis": "From latest successful immutable run window_end through current observation cutoff.",
+    "ranking_basis": "Regulatory approvals, confirmed space launch, signed acquisition and commercial hardware availability.",
+    "source_policy": "Prefer primary regulator, space agency and company sources; separate completed outcomes from plans.",
+    "repeat_policy": "All 24 immutable prior runs inspected; no repeated event keys.",
+    "selection_focus": [
+      "clinical approvals",
+      "space launch",
+      "AI commercialization",
+      "edge AI"
+    ],
+    "excluded_noise": [
+      "pre-window AEP nuclear feasibility announcement",
+      "market-price commentary",
+      "repeated events",
+      "filler"
+    ]
+  },
+  "provenance": {
+    "kind": "live-run",
+    "source": "Weekday Technology Trend Update; primary-source research and immutable main-branch GitHub ledger.",
+    "imported_at": null,
+    "notes": "Current main contracts and 24 immutable runs read; no legacy history or visual used. Request-branch publication only."
+  },
+  "findings": [
+    {
+      "rank": 1,
+      "finding_id": "gsk-jemperli-rectal-fda-2026-10-19",
+      "event_key": "gsk-jemperli-dmmr-rectal-fda",
+      "headline": "FDA approves Jemperli for biomarker-defined locally advanced rectal cancer",
+      "summary": "FDA granted accelerated approval October 19 for dostarlimab in previously untreated stage II/III MSI-H or dMMR locally advanced rectal cancer.",
+      "why_it_matters": "An approved option may reduce invasive treatment; confirmatory evidence is still required.",
+      "trend_statement": "Biomarker-selected oncology advances into approved treatment pathways.",
+      "material_update_from": null,
+      "category_ids": [
+        "biotech"
+      ],
+      "source_links": [
+        {
+          "title": "FDA approval",
+          "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-dostarlimab-locally-advanced-rectal-cancer",
+          "source_type": "primary-regulator",
+          "published_at": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "finding_id": "jaxa-mmx-phobos-launch-2026-10-20",
+      "event_key": "jaxa-mmx-phobos-sample-return",
+      "headline": "JAXA launches MMX Mars-moon sample-return spacecraft on H3",
+      "summary": "JAXA launched MMX on October 20 at 04:41 JST (October 19 at 12:41 PDT) and confirmed nominal H3 flight and spacecraft separation approximately 71 minutes later. Mars arrival is targeted for 2027 and return of Phobos samples for 2031.",
+      "why_it_matters": "Successful launch and separation are completed interplanetary milestones; Mars arrival, sampling and Earth return remain future risks.",
+      "trend_statement": "Deep-space sample-return missions are moving from development into flight.",
+      "material_update_from": null,
+      "category_ids": [
+        "aerospace-space"
+      ],
+      "source_links": [
+        {
+          "title": "JAXA MMX launch result",
+          "url": "https://www.jaxa.jp/press/2026/10/20261020-1_j.html",
+          "source_type": "primary-space-agency",
+          "published_at": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "finding_id": "salesforce-braze-acquisition-2026-10-20",
+      "event_key": "salesforce-braze-ai-engagement-acquisition",
+      "headline": "Salesforce signs $5.66 billion agreement to acquire Braze",
+      "summary": "Salesforce announced a definitive agreement October 20 to acquire Braze for approximately $5.66 billion enterprise value. Braze's real-time event-streaming and AI personalization would complement Salesforce Marketing Cloud and Agentforce. Closing is expected in fiscal 2028, subject to approvals.",
+      "why_it_matters": "The signed transaction is material investment in real-time data and AI decisioning, but integration and closing are not yet achieved.",
+      "trend_statement": "Enterprise AI vendors are acquiring operational data and decisioning platforms.",
+      "material_update_from": null,
+      "category_ids": [
+        "ai-computing"
+      ],
+      "source_links": [
+        {
+          "title": "Salesforce acquisition agreement",
+          "url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Signs-Definitive-Agreement-to-Acquire-Braze/default.aspx",
+          "source_type": "primary-company-agreement",
+          "published_at": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "finding_id": "synaptics-coralboard-ga-2026-10-20",
+      "event_key": "synaptics-google-coralboard-edge-ai",
+      "headline": "Synaptics and Google bring Coral NPU developer board into general availability",
+      "summary": "Synaptics announced October 20 that Coralboard SL is available through DigiKey after limited release. The Astra SL2619-based board integrates a 1 TOPS Torq NPU implementing Google Coral NPU technology. A Coralboard SR and open-source Torq compiler also join the platform.",
+      "why_it_matters": "Purchasable developer hardware and tooling lower barriers to edge AI without proving mass deployment or comparative performance.",
+      "trend_statement": "Open edge-AI accelerators are becoming commercially accessible developer systems.",
+      "material_update_from": null,
+      "category_ids": [
+        "ai-computing",
+        "enabling-infrastructure"
+      ],
+      "source_links": [
+        {
+          "title": "Synaptics Coralboard general availability",
+          "url": "https://investor.synaptics.com/news-releases/news-release-details/synaptics-and-google-research-expand-coralboardtm-ecosystem",
+          "source_type": "primary-company-availability",
+          "published_at": "2026-10-20"
+        }
+      ]
+    }
+  ],
+  "category_assessments": [
+    {
+      "category_id": "ai-computing",
+      "category_name": "AI and Computing",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "evidence_summary": "Salesforce signs $5.66 billion agreement to acquire Braze",
+          "finding_id": "salesforce-braze-acquisition-2026-10-20",
+          "source_url": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Signs-Definitive-Agreement-to-Acquire-Braze/default.aspx",
+          "source_type": "primary-company-agreement",
+          "published_at": "2026-10-20",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Synaptics and Google bring Coral NPU developer board into general availability",
+          "finding_id": "synaptics-coralboard-ga-2026-10-20",
+          "source_url": "https://investor.synaptics.com/news-releases/news-release-details/synaptics-and-google-research-expand-coralboardtm-ecosystem",
+          "source_type": "primary-company-availability",
+          "published_at": "2026-10-20",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Verified material event: Salesforce signs $5.66 billion agreement to acquire Braze; Synaptics and Google bring Coral NPU developer board into general availability. Forward-looking execution remains uncertain.",
+      "compared_to_run_id": "technology-trends-2026-10-19",
+      "assessed_at": "2026-10-20T08:03:09-07:00"
+    },
+    {
+      "category_id": "aerospace-space",
+      "category_name": "Aerospace and Space",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "evidence_summary": "JAXA launches MMX Mars-moon sample-return spacecraft on H3",
+          "finding_id": "jaxa-mmx-phobos-launch-2026-10-20",
+          "source_url": "https://www.jaxa.jp/press/2026/10/20261020-1_j.html",
+          "source_type": "primary-space-agency",
+          "published_at": "2026-10-20",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Verified material event: JAXA launches MMX Mars-moon sample-return spacecraft on H3. Forward-looking execution remains uncertain.",
+      "compared_to_run_id": "technology-trends-2026-10-19",
+      "assessed_at": "2026-10-20T08:03:09-07:00"
+    },
+    {
+      "category_id": "robotics-autonomy",
+      "category_name": "Robotics and Autonomy",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.77,
+      "evidence": [],
+      "justification": "No qualifying material event in this observation window.",
+      "compared_to_run_id": "technology-trends-2026-10-19",
+      "assessed_at": "2026-10-20T08:03:09-07:00"
+    },
+    {
+      "category_id": "advanced-manufacturing",
+      "category_name": "Advanced Manufacturing",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.77,
+      "evidence": [],
+      "justification": "No qualifying material event in this observation window.",
+      "compared_to_run_id": "technology-trends-2026-10-19",
+      "assessed_at": "2026-10-20T08:03:09-07:00"
+    },
+    {
+      "category_id": "energy",
+      "category_name": "Energy",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.77,
+      "evidence": [],
+      "justification": "No qualifying material event in this observation window.",
+      "compared_to_run_id": "technology-trends-2026-10-19",
+      "assessed_at": "2026-10-20T08:03:09-07:00"
+    },
+    {
+      "category_id": "transportation",
+      "category_name": "Transportation",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.77,
+      "evidence": [],
+      "justification": "No qualifying material event in this observation window.",
+      "compared_to_run_id": "technology-trends-2026-10-19",
+      "assessed_at": "2026-10-20T08:03:09-07:00"
+    },
+    {
+      "category_id": "biotech",
+      "category_name": "Biotechnology",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "evidence_summary": "FDA approves Jemperli for biomarker-defined locally advanced rectal cancer",
+          "finding_id": "gsk-jemperli-rectal-fda-2026-10-19",
+          "source_url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-dostarlimab-locally-advanced-rectal-cancer",
+          "source_type": "primary-regulator",
+          "published_at": "2026-10-19",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Verified material event: FDA approves Jemperli for biomarker-defined locally advanced rectal cancer. Forward-looking execution remains uncertain.",
+      "compared_to_run_id": "technology-trends-2026-10-19",
+      "assessed_at": "2026-10-20T08:03:09-07:00"
+    },
+    {
+      "category_id": "enabling-infrastructure",
+      "category_name": "Enabling Infrastructure",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "evidence_summary": "Synaptics and Google bring Coral NPU developer board into general availability",
+          "finding_id": "synaptics-coralboard-ga-2026-10-20",
+          "source_url": "https://investor.synaptics.com/news-releases/news-release-details/synaptics-and-google-research-expand-coralboardtm-ecosystem",
+          "source_type": "primary-company-availability",
+          "published_at": "2026-10-20",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Verified material event: Synaptics and Google bring Coral NPU developer board into general availability. Forward-looking execution remains uncertain.",
+      "compared_to_run_id": "technology-trends-2026-10-19",
+      "assessed_at": "2026-10-20T08:03:09-07:00"
+    }
+  ]
+}
