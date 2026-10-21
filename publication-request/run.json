@@ -1,0 +1,378 @@
+{
+  "schema_version": "1.0",
+  "record_type": "technology_trend_run",
+  "timezone": "America/Los_Angeles",
+  "run_id": "technology-trends-2026-10-21",
+  "scheduled_for": "2026-10-21T08:00:00-07:00",
+  "observed_at": "2026-10-21T08:02:01-07:00",
+  "window_start": "2026-10-20T08:03:09-07:00",
+  "window_end": "2026-10-21T08:02:01-07:00",
+  "status": "success",
+  "report_path": "reports/2026/2026-10-21/technology-trend-update-technology-trends-2026-10-21.html",
+  "methodology": {
+    "finding_count": 5,
+    "observation_window_basis": "From the latest successful immutable run window_end (2026-10-20T08:03:09-07:00) to the October 21 scheduled-run observation cutoff (2026-10-21T08:02:01-07:00).",
+    "ranking_basis": "Completed certifications, available enterprise products, signed capacity advances, large infrastructure investment plans and technically specified deployment designs; separate observed facts from future targets.",
+    "source_policy": "Prefer dated primary manufacturer, regulator and partner announcements; use vendor claims as claims and independently completed milestones as completed.",
+    "repeat_policy": "All 25 immutable prior runs enumerated and event keys inspected. NVIDIA OpenShell is a material update linked to its September 28 finding; other event keys are new.",
+    "selection_focus": [
+      "commercialization",
+      "manufacturing capacity",
+      "agent governance",
+      "AI infrastructure deployment",
+      "geographic investment",
+      "aviation certification"
+    ],
+    "excluded_noise": [
+      "pre-window launches and announcements",
+      "market-price-only commentary",
+      "uncorroborated production claims",
+      "speculative capacity multipliers treated as achieved",
+      "minor product refreshes",
+      "filler"
+    ]
+  },
+  "provenance": {
+    "kind": "live-run",
+    "source": "Weekday Technology Trend Update; primary-source research and public GitHub immutable main-branch ledger.",
+    "imported_at": null,
+    "notes": "25 immutable run records under data/runs/ enumerated; prior run window_end verified. No legacy history index or longitudinal visual consulted. Proposed artifacts submitted only through publication-request branch."
+  },
+  "findings": [
+    {
+      "rank": 1,
+      "finding_id": "nvidia-supply-chain-capacity-kyec-2026-10-21",
+      "event_key": "nvidia-2026-ai-supply-chain-capacity-expansion",
+      "headline": "NVIDIA announces new semiconductor supply capacity agreements and $1.1B US test-capacity advance",
+      "summary": "NVIDIA announced supplier agreements targeting 2.5x substrate capacity over three years, more than 300% growth in Amkor interposer capacity by end-2028, and a 15x optical-engine capacity target at SPIL by mid-2027. A $1.1 billion capacity-reservation advance to KYEC supports new US semiconductor test facilities, with high-volume operations targeted for April 2027. Samsung Electro-Mechanics is adding existing substrate capacity immediately. Most stated multipliers are targets, not delivered output.",
+      "why_it_matters": "The agreements and reservation advance put financial and manufacturing commitments behind AI-compute supply-chain expansion, targeting substrate, packaging, testing and optical interconnect bottlenecks rather than only GPU design.",
+      "trend_statement": "AI infrastructure scaling is shifting into contracted capacity and geographically diversified manufacturing for critical semiconductor components.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "NVIDIA — Supply chain partners expand capacity",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "advanced-manufacturing",
+        "enabling-infrastructure"
+      ]
+    },
+    {
+      "rank": 2,
+      "finding_id": "nvidia-openshell-servicenow-arc-ga-2026-10-21",
+      "event_key": "nvidia-open-agent-safety-platform",
+      "headline": "NVIDIA's OpenShell safety platform advances to available enterprise architecture; ServiceNow Arc reaches GA",
+      "summary": "Building on its September 28 Open Agent Safety Platform announcement, NVIDIA made its OpenShell Reference Architecture available for enterprise agent execution, pairing runtime containment with BlueField-4/Sentry out-of-band enforcement. ServiceNow simultaneously made its Arc long-running enterprise agent generally available with OpenShell runtime governance. ServiceNow's AI Passport-to-hardware revocation integration is still planned for a future release, not generally available today.",
+      "why_it_matters": "This is a material commercialization update from the prior platform announcement: a reference architecture is available and an enterprise agent is shipping with runtime governance. The stronger hardware-backed passport revocation path remains prospective.",
+      "trend_statement": "Autonomous-agent deployment is acquiring explicit, independent policy-enforcement layers across runtime, infrastructure and planned silicon controls.",
+      "material_update_from": "nvidia-open-agent-safety-platform-2026-09-28",
+      "source_links": [
+        {
+          "title": "NVIDIA — OpenShell Reference Architecture",
+          "url": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21"
+        },
+        {
+          "title": "ServiceNow — Arc generally available with OpenShell",
+          "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-delivers-industry-first-personal-enterprise-agent-and-policy-enforcement-with-NVIDIA-extending-AI-governance-across-software-and-silicon/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "enabling-infrastructure"
+      ]
+    },
+    {
+      "rank": 3,
+      "finding_id": "nvidia-dsx-pod-modular-ai-factory-2026-10-21",
+      "event_key": "nvidia-dsx-pod-modular-ai-factory",
+      "headline": "NVIDIA unveils modular Vera Rubin AI factories and DSX power/cooling controls",
+      "summary": "NVIDIA introduced DSX POD, a factory-integrated, containerized Vera Rubin AI-factory design intended to cut prepared-site deployment from roughly six months to as little as 14 days, with partner deliveries planned in early 2027. Separately, NVIDIA described DSX MaxLPS power-management software targeting up to 30% less power for the same token output, plus closed-loop cooling designs targeting near-zero evaporative cooling water. These are vendor targets and early partner evaluations, not independently proven fleet-wide results.",
+      "why_it_matters": "Modular integration and power-aware scheduling directly target construction lead times and power/cooling constraints that can delay AI capacity even when accelerators are available.",
+      "trend_statement": "AI infrastructure vendors are productizing factory-built deployment, energy optimization and grid-aware operations as core components of compute economics.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "NVIDIA — DSX POD factory-built AI factories",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21"
+        },
+        {
+          "title": "NVIDIA — European DSX cooling and power platform",
+          "url": "https://nvidianews.nvidia.com/news/european-ecosystem-builds-worlds-most-efficient-ai-factories-with-nvidia-dsx",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "energy",
+        "enabling-infrastructure"
+      ]
+    },
+    {
+      "rank": 4,
+      "finding_id": "amazon-germany-16b-2027-ai-infra-2026-10-20",
+      "event_key": "amazon-germany-2027-16b-investment-plan",
+      "headline": "Amazon outlines over €16B of German investment for 2027, including €4.8B in AWS expansion",
+      "summary": "At Germany's October 20 investment summit, Amazon announced plans to invest more than €16 billion in the country in 2027 across data centers, AI infrastructure, satellite connectivity, logistics and media. The company earmarked €4.8 billion for expansion of the AWS Frankfurt cloud region and said it is opening a second robotics and AI research laboratory in Berlin. The €16 billion is a forward-looking, cross-business investment plan, not completed AI-only capital expenditure.",
+      "why_it_matters": "The explicit cloud allocation and robotics research expansion show continued European infrastructure and technical-capacity investment while distinguishing the narrower AI/cloud commitment from the larger headline.",
+      "trend_statement": "Regional AI capacity is being reinforced by major planned hyperscaler spending and colocated robotics research in European industrial hubs.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Amazon — €16 billion investment plan for Germany",
+          "url": "https://www.aboutamazon.com/company-news/amazon-germany-investment",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-20"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "robotics-autonomy",
+        "enabling-infrastructure"
+      ]
+    },
+    {
+      "rank": 5,
+      "finding_id": "pratt-whitney-pt9-transport-canada-certification-2026-10-21",
+      "event_key": "pratt-whitney-pt9-certified-turboprop",
+      "headline": "Pratt & Whitney Canada unveils Transport Canada-certified PT9 turboprop engine",
+      "summary": "RTX's Pratt & Whitney Canada introduced the PT9 engine after Transport Canada certification, citing more than 14,000 development hours. The company reports 33% more power at altitude and 20% lower fuel consumption than previous-generation engines; those comparative performance figures are manufacturer claims. Production is planned in Lethbridge, Alberta, and the modular engine architecture is intended to support future hybrid-electric configurations.",
+      "why_it_matters": "Regulatory certification is a concrete aviation-propulsion milestone that reduces one major barrier to commercialization, although aircraft integration and real-world fleet economics remain to be demonstrated.",
+      "trend_statement": "Aviation propulsion is advancing through certified higher-efficiency turboprop designs with architectural pathways toward hybridization.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "RTX — Pratt & Whitney Canada certified PT9 engine",
+          "url": "https://www.rtx.com/news/news-center/2026/10/21/rtxs-pratt-whitney-canada-introduces-certified-pt9-engine",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21"
+        }
+      ],
+      "category_ids": [
+        "aerospace-space",
+        "transportation",
+        "advanced-manufacturing"
+      ]
+    }
+  ],
+  "category_assessments": [
+    {
+      "category_id": "ai-computing",
+      "category_name": "AI and Computing",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "evidence_summary": "NVIDIA announces new semiconductor supply capacity agreements and $1.1B US test-capacity advance",
+          "finding_id": "nvidia-supply-chain-capacity-kyec-2026-10-21",
+          "source_url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "NVIDIA's OpenShell safety platform advances to available enterprise architecture; ServiceNow Arc reaches GA",
+          "finding_id": "nvidia-openshell-servicenow-arc-ga-2026-10-21",
+          "source_url": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "NVIDIA unveils modular Vera Rubin AI factories and DSX power/cooling controls",
+          "finding_id": "nvidia-dsx-pod-modular-ai-factory-2026-10-21",
+          "source_url": "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Amazon outlines over €16B of German investment for 2027, including €4.8B in AWS expansion",
+          "finding_id": "amazon-germany-16b-2027-ai-infra-2026-10-20",
+          "source_url": "https://www.aboutamazon.com/company-news/amazon-germany-investment",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-20",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Multiple concrete AI infrastructure, software and supply-chain actions reinforce deployment capacity and governance.",
+      "compared_to_run_id": "technology-trends-2026-10-20",
+      "assessed_at": "2026-10-21T08:02:01-07:00"
+    },
+    {
+      "category_id": "aerospace-space",
+      "category_name": "Aerospace and Space",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.83,
+      "evidence": [
+        {
+          "evidence_summary": "Pratt & Whitney Canada unveils Transport Canada-certified PT9 turboprop engine",
+          "finding_id": "pratt-whitney-pt9-transport-canada-certification-2026-10-21",
+          "source_url": "https://www.rtx.com/news/news-center/2026/10/21/rtxs-pratt-whitney-canada-introduces-certified-pt9-engine",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Transport Canada certification of a new aviation propulsion platform is a completed aerospace engineering milestone.",
+      "compared_to_run_id": "technology-trends-2026-10-20",
+      "assessed_at": "2026-10-21T08:02:01-07:00"
+    },
+    {
+      "category_id": "robotics-autonomy",
+      "category_name": "Robotics and Autonomy",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.69,
+      "evidence": [
+        {
+          "evidence_summary": "Amazon outlines over €16B of German investment for 2027, including €4.8B in AWS expansion",
+          "finding_id": "amazon-germany-16b-2027-ai-infra-2026-10-20",
+          "source_url": "https://www.aboutamazon.com/company-news/amazon-germany-investment",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-20",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Amazon reports opening a second robotics and AI research lab in Berlin; this expands R&D capacity but is not a robot deployment milestone.",
+      "compared_to_run_id": "technology-trends-2026-10-20",
+      "assessed_at": "2026-10-21T08:02:01-07:00"
+    },
+    {
+      "category_id": "advanced-manufacturing",
+      "category_name": "Advanced Manufacturing",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.91,
+      "evidence": [
+        {
+          "evidence_summary": "NVIDIA announces new semiconductor supply capacity agreements and $1.1B US test-capacity advance",
+          "finding_id": "nvidia-supply-chain-capacity-kyec-2026-10-21",
+          "source_url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Pratt & Whitney Canada unveils Transport Canada-certified PT9 turboprop engine",
+          "finding_id": "pratt-whitney-pt9-transport-canada-certification-2026-10-21",
+          "source_url": "https://www.rtx.com/news/news-center/2026/10/21/rtxs-pratt-whitney-canada-introduces-certified-pt9-engine",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Signed NVIDIA supplier capacity commitments and a certified engine moving toward manufacturing strengthen industrial production pipelines.",
+      "compared_to_run_id": "technology-trends-2026-10-20",
+      "assessed_at": "2026-10-21T08:02:01-07:00"
+    },
+    {
+      "category_id": "energy",
+      "category_name": "Energy",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "evidence_summary": "NVIDIA unveils modular Vera Rubin AI factories and DSX power/cooling controls",
+          "finding_id": "nvidia-dsx-pod-modular-ai-factory-2026-10-21",
+          "source_url": "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "NVIDIA's DSX energy-management and cooling designs target measurable power and water efficiency, but the broad performance gains remain claims and early evaluations.",
+      "compared_to_run_id": "technology-trends-2026-10-20",
+      "assessed_at": "2026-10-21T08:02:01-07:00"
+    },
+    {
+      "category_id": "transportation",
+      "category_name": "Transportation",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.83,
+      "evidence": [
+        {
+          "evidence_summary": "Pratt & Whitney Canada unveils Transport Canada-certified PT9 turboprop engine",
+          "finding_id": "pratt-whitney-pt9-transport-canada-certification-2026-10-21",
+          "source_url": "https://www.rtx.com/news/news-center/2026/10/21/rtxs-pratt-whitney-canada-introduces-certified-pt9-engine",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "The certified PT9 propulsion platform targets higher efficiency for next-generation aircraft; fleet deployment is pending.",
+      "compared_to_run_id": "technology-trends-2026-10-20",
+      "assessed_at": "2026-10-21T08:02:01-07:00"
+    },
+    {
+      "category_id": "biotech",
+      "category_name": "Biotechnology",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.28,
+      "evidence": [],
+      "justification": "No selected, sufficiently material biotechnology event was confirmed within this window.",
+      "compared_to_run_id": "technology-trends-2026-10-20",
+      "assessed_at": "2026-10-21T08:02:01-07:00"
+    },
+    {
+      "category_id": "enabling-infrastructure",
+      "category_name": "Enabling Infrastructure",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "evidence_summary": "NVIDIA announces new semiconductor supply capacity agreements and $1.1B US test-capacity advance",
+          "finding_id": "nvidia-supply-chain-capacity-kyec-2026-10-21",
+          "source_url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "NVIDIA's OpenShell safety platform advances to available enterprise architecture; ServiceNow Arc reaches GA",
+          "finding_id": "nvidia-openshell-servicenow-arc-ga-2026-10-21",
+          "source_url": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "NVIDIA unveils modular Vera Rubin AI factories and DSX power/cooling controls",
+          "finding_id": "nvidia-dsx-pod-modular-ai-factory-2026-10-21",
+          "source_url": "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Amazon outlines over €16B of German investment for 2027, including €4.8B in AWS expansion",
+          "finding_id": "amazon-germany-16b-2027-ai-infra-2026-10-20",
+          "source_url": "https://www.aboutamazon.com/company-news/amazon-germany-investment",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-20",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Supply-chain reservation advances, factory-built AI-factory design, available agent governance and committed regional cloud plans expand the infrastructure pipeline.",
+      "compared_to_run_id": "technology-trends-2026-10-20",
+      "assessed_at": "2026-10-21T08:02:01-07:00"
+    }
+  ]
+}
