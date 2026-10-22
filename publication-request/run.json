@@ -1,0 +1,305 @@
+{
+  "schema_version": "1.0",
+  "record_type": "technology_trend_run",
+  "timezone": "America/Los_Angeles",
+  "run_id": "technology-trends-2026-10-22",
+  "scheduled_for": "2026-10-22T08:00:00-07:00",
+  "observed_at": "2026-10-22T07:59:51-07:00",
+  "window_start": "2026-10-21T08:02:01-07:00",
+  "window_end": "2026-10-22T07:59:51-07:00",
+  "status": "success",
+  "report_path": "reports/2026/2026-10-22/technology-trend-update-technology-trends-2026-10-22.html",
+  "methodology": {
+    "finding_count": 4,
+    "observation_window_basis": "Prior successful run ended 2026-10-21T08:02:01-07:00; cutoff 2026-10-22T07:59:51-07:00.",
+    "ranking_basis": "Regulatory approvals, live commercial deployments, contracted orders, and technical infrastructure progress; differentiate plans from completed work.",
+    "source_policy": "Primary sources dated October 21, 2026.",
+    "repeat_policy": "All 26 prior immutable records enumerated; four new event keys with no repeat.",
+    "selection_focus": [
+      "biotechnology approval",
+      "robotics deployment",
+      "power electronics",
+      "fleet support"
+    ],
+    "excluded_noise": [
+      "pre-window news",
+      "market-only stories",
+      "unverified claims",
+      "filler"
+    ]
+  },
+  "provenance": {
+    "kind": "live-run",
+    "source": "Primary-source research and public GitHub immutable ledger.",
+    "imported_at": null,
+    "notes": "Current run path absent on main; 26 prior runs discovered. Legacy index and visualization not consulted."
+  },
+  "findings": [
+    {
+      "rank": 1,
+      "finding_id": "astrazeneca-ultomiris-igan-fda-2026-10-21",
+      "event_key": "astrazeneca-ultomiris-igan-fda-accelerated-approval",
+      "headline": "FDA grants accelerated approval to Ultomiris for IgA nephropathy",
+      "summary": "AstraZeneca announced US accelerated approval of Ultomiris (ravulizumab) to reduce proteinuria in adults with primary IgA nephropathy at risk of progression. In the I CAN Phase III interim analysis, the placebo-adjusted reduction in proteinuria was 43.4% at week 34. The approval is based on a surrogate endpoint; slower loss of kidney function has not been established, with week-106 eGFR data pending.",
+      "why_it_matters": "The first approved C5 inhibitor for this disease is a completed regulatory commercialization milestone, but long-term clinical benefit remains to be confirmed.",
+      "trend_statement": "Complement-targeted kidney treatments are advancing via accelerated approval with postapproval outcome verification.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "AstraZeneca — Ultomiris IgAN approval",
+          "url": "https://www.astrazeneca.com/media-centre/press-releases/2026/ultomiris-approved-in-us-in-igan.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21"
+        }
+      ],
+      "category_ids": [
+        "biotech"
+      ]
+    },
+    {
+      "rank": 2,
+      "finding_id": "infineon-nvidia-800v-gan-power-2026-10-21",
+      "event_key": "infineon-nvidia-800v-gan-ibc-power-conversion",
+      "headline": "Infineon and NVIDIA advance GaN power conversion for 800 VDC AI racks",
+      "summary": "Infineon expanded its NVIDIA collaboration on GaN high-voltage intermediate bus converters for 800 VDC AI racks. Its specified solutions cover 800 V to 50 V, 12 V and 6 V conversion with switching frequencies up to 1 MHz. This builds on work first announced in 2025. No new fleet deployment count or independently verified total energy saving was disclosed.",
+      "why_it_matters": "Rack power density and electrical conversion losses are bottlenecks for AI deployment; specified power-electronics architectures address those constraints.",
+      "trend_statement": "AI data centers are adopting specialized wide-bandgap power conversion from grid to processor.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Infineon — 800 VDC GaN power conversion",
+          "url": "https://www.infineon.com/press-release/2026/infpr202610-012",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "advanced-manufacturing",
+        "energy",
+        "enabling-infrastructure"
+      ]
+    },
+    {
+      "rank": 3,
+      "finding_id": "teradyne-sereact-live-robot-fleet-2026-10-21",
+      "event_key": "teradyne-sereact-cortex-commercial-logistics-robots",
+      "headline": "Teradyne Robotics and Sereact report hundreds of deployed physical-AI robots",
+      "summary": "Teradyne Robotics and Sereact formalized a partnership using Sereact Cortex AI with Universal Robots arms for unstructured logistics tasks including returns, picking and sorting. They report hundreds of UR robots in dual-arm systems already shipped to live European customer sites. The partnership aims to expand through Teradyne distribution and North America.",
+      "why_it_matters": "Reported live commercial installations are more meaningful than a lab demo, although independent uptime, throughput and unit-economics data are not disclosed.",
+      "trend_statement": "Vision-language-action systems are entering operational warehouse workflows on existing industrial robot platforms.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Universal Robots — Sereact partnership",
+          "url": "https://www.universal-robots.com/news-and-media/news-center/teradyne-robotics-and-sereact-partner-to-scale-physical-ai-solutions-for-retail-and-logistics/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21"
+        }
+      ],
+      "category_ids": [
+        "robotics-autonomy",
+        "advanced-manufacturing",
+        "ai-computing"
+      ]
+    },
+    {
+      "rank": 4,
+      "finding_id": "agility-pittsburgh-digit5-orders-2026-10-21",
+      "event_key": "agility-digit5-orders-pittsburgh-deployment-center",
+      "headline": "Agility reports over $300M conditional Digit 5 orders and plans new support center",
+      "summary": "Agility Robotics reported more than $300 million in multi-year Digit 5 orders subject to contractual milestones and four new customers across automotive, consumer goods and agriculture. It plans a 50,000-square-foot Pittsburgh software, deployment and robot-service facility, adding about 35,000 square feet to its footprint. Existing Digit deployments include GXO, Schaeffler and Toyota Motor Manufacturing Canada. Orders are not revenue and the facility is planned.",
+      "why_it_matters": "Conditional commercial orders plus service investment demonstrate an emerging humanoid fleet pipeline, while fulfillment and support economics remain open.",
+      "trend_statement": "Humanoid robotics is shifting toward contracted deployments and lifecycle service infrastructure.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Agility Robotics — Pittsburgh expansion and orders",
+          "url": "https://www.agilityrobotics.com/content/agility-robotics-expands-pittsburgh-presence-to-support-growing-customer-deployments",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21"
+        }
+      ],
+      "category_ids": [
+        "robotics-autonomy",
+        "enabling-infrastructure"
+      ]
+    }
+  ],
+  "category_assessments": [
+    {
+      "category_id": "ai-computing",
+      "category_name": "AI and Computing",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.83,
+      "evidence": [
+        {
+          "evidence_summary": "Infineon and NVIDIA advance GaN power conversion for 800 VDC AI racks",
+          "finding_id": "infineon-nvidia-800v-gan-power-2026-10-21",
+          "source_url": "https://www.infineon.com/press-release/2026/infpr202610-012",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Teradyne Robotics and Sereact report hundreds of deployed physical-AI robots",
+          "finding_id": "teradyne-sereact-live-robot-fleet-2026-10-21",
+          "source_url": "https://www.universal-robots.com/news-and-media/news-center/teradyne-robotics-and-sereact-partner-to-scale-physical-ai-solutions-for-retail-and-logistics/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "AI rack power electronics and deployed physical-AI systems advanced.",
+      "compared_to_run_id": "technology-trends-2026-10-21",
+      "assessed_at": "2026-10-22T07:59:51-07:00"
+    },
+    {
+      "category_id": "aerospace-space",
+      "category_name": "Aerospace and Space",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.29,
+      "evidence": [],
+      "justification": "No qualifying aerospace milestone was selected.",
+      "compared_to_run_id": "technology-trends-2026-10-21",
+      "assessed_at": "2026-10-22T07:59:51-07:00"
+    },
+    {
+      "category_id": "robotics-autonomy",
+      "category_name": "Robotics and Autonomy",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.92,
+      "evidence": [
+        {
+          "evidence_summary": "Teradyne Robotics and Sereact report hundreds of deployed physical-AI robots",
+          "finding_id": "teradyne-sereact-live-robot-fleet-2026-10-21",
+          "source_url": "https://www.universal-robots.com/news-and-media/news-center/teradyne-robotics-and-sereact-partner-to-scale-physical-ai-solutions-for-retail-and-logistics/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Agility reports over $300M conditional Digit 5 orders and plans new support center",
+          "finding_id": "agility-pittsburgh-digit5-orders-2026-10-21",
+          "source_url": "https://www.agilityrobotics.com/content/agility-robotics-expands-pittsburgh-presence-to-support-growing-customer-deployments",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Hundreds of reported live logistics robot deployments and conditional $300M+ humanoid orders.",
+      "compared_to_run_id": "technology-trends-2026-10-21",
+      "assessed_at": "2026-10-22T07:59:51-07:00"
+    },
+    {
+      "category_id": "advanced-manufacturing",
+      "category_name": "Advanced Manufacturing",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.83,
+      "evidence": [
+        {
+          "evidence_summary": "Infineon and NVIDIA advance GaN power conversion for 800 VDC AI racks",
+          "finding_id": "infineon-nvidia-800v-gan-power-2026-10-21",
+          "source_url": "https://www.infineon.com/press-release/2026/infpr202610-012",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Teradyne Robotics and Sereact report hundreds of deployed physical-AI robots",
+          "finding_id": "teradyne-sereact-live-robot-fleet-2026-10-21",
+          "source_url": "https://www.universal-robots.com/news-and-media/news-center/teradyne-robotics-and-sereact-partner-to-scale-physical-ai-solutions-for-retail-and-logistics/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Industrial robot integration and GaN power-converter architecture advanced.",
+      "compared_to_run_id": "technology-trends-2026-10-21",
+      "assessed_at": "2026-10-22T07:59:51-07:00"
+    },
+    {
+      "category_id": "energy",
+      "category_name": "Energy",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.76,
+      "evidence": [
+        {
+          "evidence_summary": "Infineon and NVIDIA advance GaN power conversion for 800 VDC AI racks",
+          "finding_id": "infineon-nvidia-800v-gan-power-2026-10-21",
+          "source_url": "https://www.infineon.com/press-release/2026/infpr202610-012",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "High-voltage GaN conversion targets data-center power losses; fleet-wide savings unverified.",
+      "compared_to_run_id": "technology-trends-2026-10-21",
+      "assessed_at": "2026-10-22T07:59:51-07:00"
+    },
+    {
+      "category_id": "transportation",
+      "category_name": "Transportation",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.29,
+      "evidence": [],
+      "justification": "No qualifying transportation milestone was selected.",
+      "compared_to_run_id": "technology-trends-2026-10-21",
+      "assessed_at": "2026-10-22T07:59:51-07:00"
+    },
+    {
+      "category_id": "biotech",
+      "category_name": "Biotechnology",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "evidence_summary": "FDA grants accelerated approval to Ultomiris for IgA nephropathy",
+          "finding_id": "astrazeneca-ultomiris-igan-fda-2026-10-21",
+          "source_url": "https://www.astrazeneca.com/media-centre/press-releases/2026/ultomiris-approved-in-us-in-igan.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "FDA accelerated approval is a completed regulatory milestone.",
+      "compared_to_run_id": "technology-trends-2026-10-21",
+      "assessed_at": "2026-10-22T07:59:51-07:00"
+    },
+    {
+      "category_id": "enabling-infrastructure",
+      "category_name": "Enabling Infrastructure",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "evidence_summary": "Infineon and NVIDIA advance GaN power conversion for 800 VDC AI racks",
+          "finding_id": "infineon-nvidia-800v-gan-power-2026-10-21",
+          "source_url": "https://www.infineon.com/press-release/2026/infpr202610-012",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Agility reports over $300M conditional Digit 5 orders and plans new support center",
+          "finding_id": "agility-pittsburgh-digit5-orders-2026-10-21",
+          "source_url": "https://www.agilityrobotics.com/content/agility-robotics-expands-pittsburgh-presence-to-support-growing-customer-deployments",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-21",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "800 VDC converter solutions and humanoid service infrastructure address scaling bottlenecks.",
+      "compared_to_run_id": "technology-trends-2026-10-21",
+      "assessed_at": "2026-10-22T07:59:51-07:00"
+    }
+  ]
+}
