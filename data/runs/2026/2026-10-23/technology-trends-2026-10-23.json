@@ -1,0 +1,292 @@
+{
+  "schema_version": "1.0",
+  "record_type": "technology_trend_run",
+  "timezone": "America/Los_Angeles",
+  "run_id": "technology-trends-2026-10-23",
+  "scheduled_for": "2026-10-23T08:00:00-07:00",
+  "observed_at": "2026-10-23T07:59:00-07:00",
+  "window_start": "2026-10-22T07:59:51-07:00",
+  "window_end": "2026-10-23T07:59:00-07:00",
+  "status": "success",
+  "report_path": "reports/2026/2026-10-23/technology-trend-update-technology-trends-2026-10-23.html",
+  "methodology": {
+    "finding_count": 5,
+    "observation_window_basis": "Previous successful immutable run ended 2026-10-22T07:59:51-07:00; observation cutoff 2026-10-23T07:59:00-07:00.",
+    "ranking_basis": "Rank completed clinical and operational milestones, material regulatory proposals, actual customer deployments, and named institutional commitments; distinguish completed from planned.",
+    "source_policy": "Primary sources published October 22, 2026; no future-dated events included.",
+    "repeat_policy": "Enumerated 27 prior immutable run records; reused Roman event_key and linked the prior September 18 observation; all other event keys new.",
+    "selection_focus": [
+      "pivotal clinical evidence",
+      "technology regulation",
+      "spacecraft commissioning",
+      "AI infrastructure reliability",
+      "quantum geographic expansion"
+    ],
+    "excluded_noise": [
+      "market-only price movements",
+      "previous-window events",
+      "future announcements",
+      "unverified performance claims",
+      "filler"
+    ]
+  },
+  "provenance": {
+    "kind": "live-run",
+    "source": "Public GitHub immutable ledger and primary company, government, and space-agency sources.",
+    "imported_at": null,
+    "notes": "All 27 prior immutable records read; October 23 occurrence absent from main before staging. Legacy derived files not consulted."
+  },
+  "findings": [
+    {
+      "rank": 1,
+      "finding_id": "merck-moderna-interpath001-phase3-details-2026-10-22",
+      "event_key": "merck-moderna-interpath001-melanoma-phase3-detailed-results",
+      "headline": "Merck and Moderna disclose 42% lower melanoma recurrence or death risk in pivotal personalized mRNA trial",
+      "summary": "Merck and Moderna released detailed results from the 1,137-patient Phase 3 INTerpath-001 trial of individualized mRNA neoantigen therapy intismeran plus Keytruda after resection of stage IIB-IV melanoma. Recurrence or death risk was 42% lower than Keytruda alone (HR 0.58, 95% CI 0.45-0.75); two-year recurrence-free survival was 82.2% versus 70.0%. Grade 3-5 treatment-related adverse events occurred in 14.2% versus 13.4%. The therapy remains investigational.",
+      "why_it_matters": "The detailed randomized Phase 3 effect size and safety data strengthen clinical evidence for individually manufactured mRNA cancer immunotherapy; regulatory approval and overall-survival benefit remain unestablished.",
+      "trend_statement": "Personalized cancer vaccines are progressing from promising early trials to quantified pivotal clinical efficacy.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Merck and Moderna — Phase 3 INTerpath-001 detailed results",
+          "url": "https://www.merck.com/news/merck-and-moderna-will-present-results-from-landmark-phase-3-interpath-001-trial-for-intismeran-autogene-plus-keytruda-pembrolizumab-at-esmo-2026-presidential-symposium/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-22"
+        }
+      ],
+      "category_ids": [
+        "biotech"
+      ]
+    },
+    {
+      "rank": 2,
+      "finding_id": "treasury-coins-outbound-investment-nprm-2026-10-22",
+      "event_key": "us-treasury-coins-outbound-investment-expanded-proposal",
+      "headline": "U.S. Treasury proposes expanded outbound investment restrictions covering biotechnology and strategic computing",
+      "summary": "The U.S. Treasury issued a proposed rule implementing the COINS Act. It would establish prohibited and notifiable investment categories across semiconductors, AI, quantum information, high-performance computing, hypersonics and newly added biotechnology for covered foreign persons. Comments are due December 7, 2026. This is a proposed regulation, not a final rule or presently effective new restriction.",
+      "why_it_matters": "The proposal could change cross-border funding and commercialization pathways for strategically sensitive technology sectors; final scope and timing remain subject to rulemaking.",
+      "trend_statement": "National security regulation is expanding from technology exports toward capital flows into advanced technology.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "U.S. Treasury — COINS Act proposed outbound investment rule",
+          "url": "https://home.treasury.gov/news/press-releases/sb0667/",
+          "source_type": "primary-government-announcement",
+          "published_at": "2026-10-22"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "advanced-manufacturing",
+        "biotech"
+      ]
+    },
+    {
+      "rank": 3,
+      "finding_id": "nasa-roman-science-commissioning-2026-10-22",
+      "event_key": "nasa-roman-space-telescope-launch",
+      "headline": "NASA's Roman Space Telescope completes observatory checkout and enters science commissioning",
+      "summary": "NASA confirmed the Nancy Grace Roman Space Telescope completed comprehensive observatory and primary instrument checkout and entered science commissioning. The telescope can guide, slew and collect exposures, and data are flowing; calibration and image-quality characterization remain before routine science operations. NASA reports challenging stellar-field pointing tests have performed well.",
+      "why_it_matters": "This is a completed in-orbit operational milestone after launch and instrument activation, reducing uncertainty about observatory readiness while leaving scientific operations ahead.",
+      "trend_statement": "Flagship space observatories are transitioning from launch and checkout into validated science capability.",
+      "material_update_from": "nasa-roman-instrument-activation-2026-09-18",
+      "source_links": [
+        {
+          "title": "NASA — Roman Space Telescope enters final commissioning",
+          "url": "https://science.nasa.gov/blogs/roman/2026/10/22/nasas-roman-space-telescope-enters-final-commissioning-phase/",
+          "source_type": "primary-space-agency-announcement",
+          "published_at": "2026-10-22"
+        }
+      ],
+      "category_ids": [
+        "aerospace-space"
+      ]
+    },
+    {
+      "rank": 4,
+      "finding_id": "nvidia-minerva-ai-factory-observability-2026-10-22",
+      "event_key": "nvidia-minerva-ai-factory-observability-platform",
+      "headline": "NVIDIA launches Minerva observability platform with an AI-factory operator already using it",
+      "summary": "NVIDIA introduced Minerva, an AIOps platform correlating GPU, network, storage, scheduler and workload telemetry through an infrastructure knowledge graph. IREN says it is using Minerva; Aolani, Bitdeer AI, IBM, Jio, Lambda, Quake AI and Tesla plan deployment. NVIDIA claims earlier anomaly detection and faster root-cause analysis but did not provide independently audited uptime gains.",
+      "why_it_matters": "AI infrastructure economics depend on productive GPU hours and tokens delivered, not only installed accelerators. A deployed cross-stack observability product targets reliability and utilization.",
+      "trend_statement": "AI-factory operations are developing specialized software to measure and improve infrastructure yield.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "NVIDIA — Minerva AI factory observability launch",
+          "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-22"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "enabling-infrastructure"
+      ]
+    },
+    {
+      "rank": 5,
+      "finding_id": "quandela-quanova-vietnam-mosaiq-2026-10-22",
+      "event_key": "quandela-quanova-vietnam-mosaiq-quantum-deployment-agreement",
+      "headline": "Quandela and Quanova agree to deploy Vietnam's first photonic quantum computer at a university",
+      "summary": "Quandela said Quanova selected its MosaiQ photonic quantum computer for a research and training program at Quang Trung University in Vietnam, supported by Nam A Bank. The agreement includes faculty training, a quantum experience center and an innovator residency program. Deployment is planned; the machine has not yet been shown to be installed or operating.",
+      "why_it_matters": "A named institutional deployment commitment and supporting education program extend quantum computing infrastructure into a new national research ecosystem, although operational impact is still prospective.",
+      "trend_statement": "Quantum computing vendors are expanding internationally through institutional installations and workforce development.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Quandela — Vietnam photonic quantum computing partnership",
+          "url": "https://www.quandela.com/about-us/newsroom/quandela-vietnam-first-quantum-computer/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-22"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "enabling-infrastructure"
+      ]
+    }
+  ],
+  "category_assessments": [
+    {
+      "category_id": "ai-computing",
+      "category_name": "AI and Computing",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.84,
+      "evidence": [
+        {
+          "evidence_summary": "NVIDIA launches Minerva observability platform with an AI-factory operator already using it",
+          "finding_id": "nvidia-minerva-ai-factory-observability-2026-10-22",
+          "source_url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-22",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Quandela and Quanova agree to deploy Vietnam's first photonic quantum computer at a university",
+          "finding_id": "quandela-quanova-vietnam-mosaiq-2026-10-22",
+          "source_url": "https://www.quandela.com/about-us/newsroom/quandela-vietnam-first-quantum-computer/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-22",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Minerva has a reported active operator; a quantum system has been selected for future deployment, with commercialization still developing.",
+      "compared_to_run_id": "technology-trends-2026-10-22",
+      "assessed_at": "2026-10-23T07:59:00-07:00"
+    },
+    {
+      "category_id": "aerospace-space",
+      "category_name": "Aerospace and Space",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "evidence_summary": "NASA's Roman Space Telescope completes observatory checkout and enters science commissioning",
+          "finding_id": "nasa-roman-science-commissioning-2026-10-22",
+          "source_url": "https://science.nasa.gov/blogs/roman/2026/10/22/nasas-roman-space-telescope-enters-final-commissioning-phase/",
+          "source_type": "primary-space-agency-announcement",
+          "published_at": "2026-10-22",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "NASA confirms completed Roman observatory checkout and transition into science commissioning.",
+      "compared_to_run_id": "technology-trends-2026-10-22",
+      "assessed_at": "2026-10-23T07:59:00-07:00"
+    },
+    {
+      "category_id": "robotics-autonomy",
+      "category_name": "Robotics and Autonomy",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.31,
+      "evidence": [],
+      "justification": "No independently qualifying robotics deployment or technical milestone was selected in this window.",
+      "compared_to_run_id": "technology-trends-2026-10-22",
+      "assessed_at": "2026-10-23T07:59:00-07:00"
+    },
+    {
+      "category_id": "advanced-manufacturing",
+      "category_name": "Advanced Manufacturing",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.32,
+      "evidence": [],
+      "justification": "The Treasury proposal affects strategic manufacturing investment, but no measurable manufacturing capacity or production milestone was selected.",
+      "compared_to_run_id": "technology-trends-2026-10-22",
+      "assessed_at": "2026-10-23T07:59:00-07:00"
+    },
+    {
+      "category_id": "energy",
+      "category_name": "Energy",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.29,
+      "evidence": [],
+      "justification": "No qualifying energy generation, storage or deployment milestone was selected.",
+      "compared_to_run_id": "technology-trends-2026-10-22",
+      "assessed_at": "2026-10-23T07:59:00-07:00"
+    },
+    {
+      "category_id": "transportation",
+      "category_name": "Transportation",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.28,
+      "evidence": [],
+      "justification": "No qualifying transportation milestone was selected.",
+      "compared_to_run_id": "technology-trends-2026-10-22",
+      "assessed_at": "2026-10-23T07:59:00-07:00"
+    },
+    {
+      "category_id": "biotech",
+      "category_name": "Biotechnology",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "evidence_summary": "Merck and Moderna disclose 42% lower melanoma recurrence or death risk in pivotal personalized mRNA trial",
+          "finding_id": "merck-moderna-interpath001-phase3-details-2026-10-22",
+          "source_url": "https://www.merck.com/news/merck-and-moderna-will-present-results-from-landmark-phase-3-interpath-001-trial-for-intismeran-autogene-plus-keytruda-pembrolizumab-at-esmo-2026-presidential-symposium/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-22",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "The detailed randomized Phase 3 melanoma efficacy result provides strong new clinical evidence.",
+      "compared_to_run_id": "technology-trends-2026-10-22",
+      "assessed_at": "2026-10-23T07:59:00-07:00"
+    },
+    {
+      "category_id": "enabling-infrastructure",
+      "category_name": "Enabling Infrastructure",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.83,
+      "evidence": [
+        {
+          "evidence_summary": "NVIDIA launches Minerva observability platform with an AI-factory operator already using it",
+          "finding_id": "nvidia-minerva-ai-factory-observability-2026-10-22",
+          "source_url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-22",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Quandela and Quanova agree to deploy Vietnam's first photonic quantum computer at a university",
+          "finding_id": "quandela-quanova-vietnam-mosaiq-2026-10-22",
+          "source_url": "https://www.quandela.com/about-us/newsroom/quandela-vietnam-first-quantum-computer/",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-22",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Minerva is reportedly in use and the Vietnam quantum installation is contracted, though broader operating results are pending.",
+      "compared_to_run_id": "technology-trends-2026-10-22",
+      "assessed_at": "2026-10-23T07:59:00-07:00"
+    }
+  ]
+}
