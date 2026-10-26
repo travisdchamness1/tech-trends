@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "record_type": "technology_trend_run",
+  "timezone": "America/Los_Angeles",
+  "run_id": "technology-trends-2026-10-26",
+  "scheduled_for": "2026-10-26T08:00:00-07:00",
+  "observed_at": "2026-10-26T08:00:41-07:00",
+  "window_start": "2026-10-23T07:59:00-07:00",
+  "window_end": "2026-10-26T08:00:41-07:00",
+  "status": "success",
+  "report_path": "reports/2026/2026-10-26/technology-trend-update-technology-trends-2026-10-26.html",
+  "methodology": {
+    "finding_count": 4,
+    "observation_window_basis": "Previous successful immutable run ended 2026-10-23T07:59:00-07:00; current observation cutoff 2026-10-26T08:00:41-07:00.",
+    "ranking_basis": "Rank signed contracts, reported operational deployments, documented mission-architecture changes, and technically specified engineering products; distinguish operational milestones from future targets.",
+    "source_policy": "Primary company and NASA announcements dated October 23-26, 2026, with confirmed timing within the observation window for October 23 news.",
+    "repeat_policy": "Enumerated all 28 successful immutable runs through October 23; none of the four selected event_keys has a preceding observation in the ledger.",
+    "selection_focus": [
+      "secured AI power and compute capacity",
+      "commercial humanoid logistics operations",
+      "crewed lunar mission verification",
+      "deterministic agentic engineering"
+    ],
+    "excluded_noise": [
+      "market-only price moves",
+      "announcements outside the observation window",
+      "previously reported events without a material update",
+      "unsupported operational claims",
+      "filler"
+    ]
+  },
+  "provenance": {
+    "kind": "live-run",
+    "source": "Public GitHub immutable run ledger and dated primary NASA and company press releases.",
+    "imported_at": null,
+    "notes": "All 28 prior immutable run records were read; October 26 scheduled_for and canonical path absent from main before staging. No legacy derived files consulted."
+  },
+  "findings": [
+    {
+      "rank": 1,
+      "finding_id": "swi-compute-3point6gw-nvidia-ai-factories-2026-10-26",
+      "event_key": "swi-compute-power-secured-european-ai-factory-rollout",
+      "headline": "SWI Compute converts secured power and $1B hardware orders into a contracted European AI-factory rollout",
+      "summary": "SWI Group launched SWI Compute, reporting 3.6 GW of secured power capacity across European and U.S. sites, approximately $1 billion of NVIDIA system orders, and signed initial customer contracts. Its first U.K. facility targets 30 MW and nearly 7,000 Rubin GPUs by the end of 2027; the broader U.K. campus is planned for 530 MW and a 2.3 GW AI-factory footprint is targeted for 2029. A U.S. inference provider has contracted capacity. None of the announced new AI-factory capacity is yet operational.",
+      "why_it_matters": "Unlike a speculative data-center announcement, this initiative identifies presecured grid capacity, ordered hardware, and a contracted customer. Delivery and utilization still depend on construction, grid commissioning, and hardware supply.",
+      "trend_statement": "AI-infrastructure developers are converting scarce presecured power access into contracted GPU capacity and regional AI cloud offerings.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "SWI Group — SWI Compute launch and European AI-factory contracts",
+          "url": "https://www.prnewswire.com/news-releases/swi-compute-emerges-from-stealth-to-turn-gigawatts-of-power-into-nvidia-ai-factories-starting-in-europe-302918810.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-26"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "enabling-infrastructure"
+      ]
+    },
+    {
+      "rank": 2,
+      "finding_id": "gxo-agility-digit-two-new-us-sites-2026-10-26",
+      "event_key": "gxo-agility-digit-commercial-warehouse-expansion",
+      "headline": "GXO expands commercial humanoid deployment to two more U.S. warehouses after 100,000 totes moved",
+      "summary": "GXO Logistics and Agility Robotics expanded their commercial Robots-as-a-Service partnership from the existing Flowery Branch, Georgia, site to GXO facilities in Statesville, North Carolina, and Lebanon, Tennessee. GXO reports that Digit robots have moved more than 100,000 totes in its live Georgia warehouse. The two additional deployments are scheduled to begin in early 2027 with Digit 4 and later transition to Digit 5.",
+      "why_it_matters": "Measured work in an operating warehouse plus an explicit multisite customer expansion provides stronger commercialization evidence than robot demonstrations or conditional order backlogs. Performance economics and new-site execution are not yet independently quantified.",
+      "trend_statement": "Humanoid logistics automation is advancing from one-site commercial operation toward repeatable multisite deployment.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "GXO Logistics and Agility Robotics — expansion of commercial humanoid deployment",
+          "url": "https://www.globenewswire.com/news-release/2026/10/26/3387960/0/en/gxo-and-agility-robotics-expand-partnership-to-accelerate-deployment-of-humanoids-in-u-s-operations.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-26"
+        }
+      ],
+      "category_ids": [
+        "robotics-autonomy",
+        "advanced-manufacturing"
+      ]
+    },
+    {
+      "rank": 3,
+      "finding_id": "nasa-artemis-hls-contract-realignment-2026-10-23",
+      "event_key": "nasa-artemis-human-landing-system-2026-contract-realignment",
+      "headline": "NASA realigns SpaceX and Blue Origin lunar lander plans around 2027 orbital tests and 2028 surface missions",
+      "summary": "NASA detailed an updated human landing system architecture on October 23. Artemis III will test rendezvous and docking with lander test vehicles in low Earth orbit in 2027 rather than attempt a lunar landing. NASA has updated SpaceX and Blue Origin contracts and added development milestones, including Starship crew-cabin demonstrations and Blue Moon human-in-the-loop and hardware readiness testing. Neither company has yet been assigned the first crewed lunar landing; NASA targets the first Artemis surface mission for 2028.",
+      "why_it_matters": "Revised contractual milestones and mission sequencing materially change the verification path and competitive selection for U.S. crewed lunar landers. These are program and contract changes, not completed flight demonstrations.",
+      "trend_statement": "Commercial lunar exploration is shifting toward staged flight verification and competitive provider readiness before committing to crewed landings.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "NASA — lander development and Artemis 2028 mission architecture update",
+          "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
+          "source_type": "primary-space-agency-announcement",
+          "published_at": "2026-10-23"
+        },
+        {
+          "title": "NASA — October 23 Artemis acceleration briefing",
+          "url": "https://www.nasa.gov/blogs/missions/2026/10/23/nasa-shares-artemis-acceleration-plans-for-moon-missions/",
+          "source_type": "primary-space-agency-announcement",
+          "published_at": "2026-10-23"
+        }
+      ],
+      "category_ids": [
+        "aerospace-space"
+      ]
+    },
+    {
+      "rank": 4,
+      "finding_id": "cadence-maestro-specialized-chip-design-models-2026-10-26",
+      "event_key": "cadence-maestro-agentic-eda-model-portfolio",
+      "headline": "Cadence introduces specialized, customer-hostable AI models with deterministic EDA feedback loops",
+      "summary": "Cadence announced Maestro, a portfolio of domain-specialized models integrated with its chip and system design agents, electronic-design tools, and reinforcement-learning feedback from engineering solvers. Cadence claims initial workflows yield up to 30% better quality and fivefold greater token efficiency than general-purpose foundation models; those figures are vendor benchmarks. The architecture supports customer-controlled on-premises deployment and NVIDIA Nemotron and OpenShell integration. Select early access is planned during Q4 2026.",
+      "why_it_matters": "Embedding deterministic design-tool evaluation into agent training and allowing deployment behind customer firewalls addresses two barriers to enterprise agentic engineering: verifiable technical correctness and proprietary design confidentiality. Broad commercial availability and independent benchmarks remain pending.",
+      "trend_statement": "Domain-specific AI agents are becoming tightly coupled to deterministic engineering tools and customer-controlled infrastructure.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Cadence Design Systems — Maestro specialized AI models and agentic design platform",
+          "url": "https://markets.financialcontent.com/prnews.pressre/article/bizwire-2026-10-26-cadence-introduces-maestro-a-domain-specialized-ai-model-portfolio-to-revolutionize-agentic-chip-and-system-design",
+          "source_type": "primary-company-press-release-syndicated",
+          "published_at": "2026-10-26"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "advanced-manufacturing"
+      ]
+    }
+  ],
+  "category_assessments": [
+    {
+      "category_id": "ai-computing",
+      "category_name": "AI and Computing",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.88,
+      "evidence": [
+        {
+          "evidence_summary": "SWI Compute converts secured power and $1B hardware orders into a contracted European AI-factory rollout",
+          "finding_id": "swi-compute-3point6gw-nvidia-ai-factories-2026-10-26",
+          "source_url": "https://www.prnewswire.com/news-releases/swi-compute-emerges-from-stealth-to-turn-gigawatts-of-power-into-nvidia-ai-factories-starting-in-europe-302918810.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-26",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Cadence introduces specialized, customer-hostable AI models with deterministic EDA feedback loops",
+          "finding_id": "cadence-maestro-specialized-chip-design-models-2026-10-26",
+          "source_url": "https://markets.financialcontent.com/prnews.pressre/article/bizwire-2026-10-26-cadence-introduces-maestro-a-domain-specialized-ai-model-portfolio-to-revolutionize-agentic-chip-and-system-design",
+          "source_type": "primary-company-press-release-syndicated",
+          "published_at": "2026-10-26",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Contracted GPU capacity and specialized agentic chip-design models show concrete commercialization steps, although most new deployments remain prospective.",
+      "compared_to_run_id": "technology-trends-2026-10-23",
+      "assessed_at": "2026-10-26T08:00:41-07:00"
+    },
+    {
+      "category_id": "aerospace-space",
+      "category_name": "Aerospace and Space",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.92,
+      "evidence": [
+        {
+          "evidence_summary": "NASA realigns SpaceX and Blue Origin lunar lander plans around 2027 orbital tests and 2028 surface missions",
+          "finding_id": "nasa-artemis-hls-contract-realignment-2026-10-23",
+          "source_url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
+          "source_type": "primary-space-agency-announcement",
+          "published_at": "2026-10-23",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "NASA has formalized new Artemis lander verification milestones and competition, but flight outcomes remain ahead.",
+      "compared_to_run_id": "technology-trends-2026-10-23",
+      "assessed_at": "2026-10-26T08:00:41-07:00"
+    },
+    {
+      "category_id": "robotics-autonomy",
+      "category_name": "Robotics and Autonomy",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "evidence_summary": "GXO expands commercial humanoid deployment to two more U.S. warehouses after 100,000 totes moved",
+          "finding_id": "gxo-agility-digit-two-new-us-sites-2026-10-26",
+          "source_url": "https://www.globenewswire.com/news-release/2026/10/26/3387960/0/en/gxo-and-agility-robotics-expand-partnership-to-accelerate-deployment-of-humanoids-in-u-s-operations.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-26",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "GXO reports more than 100,000 completed tote moves at a live warehouse and an agreement to expand Digit to two additional sites.",
+      "compared_to_run_id": "technology-trends-2026-10-23",
+      "assessed_at": "2026-10-26T08:00:41-07:00"
+    },
+    {
+      "category_id": "advanced-manufacturing",
+      "category_name": "Advanced Manufacturing",
+      "direction": "up",
+      "velocity_score": 1,
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "evidence_summary": "GXO expands commercial humanoid deployment to two more U.S. warehouses after 100,000 totes moved",
+          "finding_id": "gxo-agility-digit-two-new-us-sites-2026-10-26",
+          "source_url": "https://www.globenewswire.com/news-release/2026/10/26/3387960/0/en/gxo-and-agility-robotics-expand-partnership-to-accelerate-deployment-of-humanoids-in-u-s-operations.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-26",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Cadence introduces specialized, customer-hostable AI models with deterministic EDA feedback loops",
+          "finding_id": "cadence-maestro-specialized-chip-design-models-2026-10-26",
+          "source_url": "https://markets.financialcontent.com/prnews.pressre/article/bizwire-2026-10-26-cadence-introduces-maestro-a-domain-specialized-ai-model-portfolio-to-revolutionize-agentic-chip-and-system-design",
+          "source_type": "primary-company-press-release-syndicated",
+          "published_at": "2026-10-26",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Warehouse automation is expanding commercially, and engineering design tools gain new domain-specialized agent capabilities; capacity impact is not yet measured.",
+      "compared_to_run_id": "technology-trends-2026-10-23",
+      "assessed_at": "2026-10-26T08:00:41-07:00"
+    },
+    {
+      "category_id": "energy",
+      "category_name": "Energy",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.3,
+      "evidence": [],
+      "justification": "Power access is important to the SWI initiative, but no qualifying new energy generation or storage commissioning was reported.",
+      "compared_to_run_id": "technology-trends-2026-10-23",
+      "assessed_at": "2026-10-26T08:00:41-07:00"
+    },
+    {
+      "category_id": "transportation",
+      "category_name": "Transportation",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.29,
+      "evidence": [],
+      "justification": "No independent transportation deployment or certification milestone met the materiality threshold in the observation window.",
+      "compared_to_run_id": "technology-trends-2026-10-23",
+      "assessed_at": "2026-10-26T08:00:41-07:00"
+    },
+    {
+      "category_id": "biotech",
+      "category_name": "Biotechnology",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.3,
+      "evidence": [],
+      "justification": "No biotechnology milestone with sufficiently verified within-window timing and materiality was selected.",
+      "compared_to_run_id": "technology-trends-2026-10-23",
+      "assessed_at": "2026-10-26T08:00:41-07:00"
+    },
+    {
+      "category_id": "enabling-infrastructure",
+      "category_name": "Enabling Infrastructure",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.89,
+      "evidence": [
+        {
+          "evidence_summary": "SWI Compute converts secured power and $1B hardware orders into a contracted European AI-factory rollout",
+          "finding_id": "swi-compute-3point6gw-nvidia-ai-factories-2026-10-26",
+          "source_url": "https://www.prnewswire.com/news-releases/swi-compute-emerges-from-stealth-to-turn-gigawatts-of-power-into-nvidia-ai-factories-starting-in-europe-302918810.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-26",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "SWI reports secured power access, substantial hardware orders and initial customer contracts for regional AI-factory infrastructure; operational commissioning is pending.",
+      "compared_to_run_id": "technology-trends-2026-10-23",
+      "assessed_at": "2026-10-26T08:00:41-07:00"
+    }
+  ]
+}
