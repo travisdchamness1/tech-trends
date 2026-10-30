@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0",
+  "record_type": "technology_trend_run",
+  "timezone": "America/Los_Angeles",
+  "run_id": "technology-trends-2026-10-30",
+  "scheduled_for": "2026-10-30T08:00:00-07:00",
+  "observed_at": "2026-10-30T07:59:15-07:00",
+  "window_start": "2026-10-29T08:00:22-07:00",
+  "window_end": "2026-10-30T07:59:15-07:00",
+  "status": "success",
+  "report_path": "reports/2026/2026-10-30/technology-trend-update-technology-trends-2026-10-30.html",
+  "methodology": {
+    "finding_count": 3,
+    "observation_window_basis": "Start equals latest successful immutable run's window_end, 2026-10-29T08:00:22-07:00; cutoff is 2026-10-30T07:59:15-07:00. All three primary announcements were published October 29 after the prior cutoff (Amazon and Intel 4:01 p.m. EDT; Cohere 11:45 a.m. EDT).",
+    "ranking_basis": "Rank measured cloud demand and financial constraints, then chip-supply/manufacturing execution, then initial sovereign-AI financing commitments; separate realized outcomes from plans.",
+    "source_policy": "Prefer dated company earnings releases, Cohere's official financing statement, the Canadian government announcement; use Reuters for Intel incident detail.",
+    "repeat_policy": "Enumerated 32 immutable successful runs under data/runs; all three events are new, with no preceding event_key observation.",
+    "selection_focus": [
+      "realized AI cloud revenue versus capital intensity",
+      "AI-server demand and manufacturing resilience",
+      "sovereign AI strategic financing"
+    ],
+    "excluded_noise": [
+      "prior-window announcements",
+      "routine product marketing",
+      "unverified future launch or funding targets",
+      "market-price moves without technical materiality",
+      "filler"
+    ]
+  },
+  "provenance": {
+    "kind": "live-run",
+    "source": "Public GitHub main-branch immutable ledger and dated corporate, government and independent disclosures October 29, 2026.",
+    "imported_at": null,
+    "notes": "Read main SKILL.md, persistence protocol, registry and schema; discovered 32 immutable runs under data/runs; checked October 30 expected path and publication request branch before research. Legacy history and visual not consulted."
+  },
+  "findings": [
+    {
+      "rank": 1,
+      "finding_id": "amazon-q3-aws-growth-ai-free-cash-flow-2026-10-29",
+      "event_key": "amazon-q3-2026-aws-growth-ai-capital-pressure",
+      "headline": "Amazon AWS grows 39.3% to $46 billion while AI infrastructure spending drives negative free cash flow",
+      "summary": "Amazon reported third-quarter 2026 AWS revenue of $46.0 billion, up 39.3% year over year, and AWS operating income of $17.8 billion. Companywide trailing-12-month free cash flow fell to an outflow of $42.4 billion from a $14.8 billion inflow a year earlier, mainly due to a $94.8 billion increase in net purchases of property and equipment, largely reflecting AI investment. The company projects continued rapid AWS growth, but this is a forecast, not a realized result.",
+      "why_it_matters": "Cloud AI demand is converting into substantial revenue and operating income, yet the capital required to expand compute capacity is materially pressuring cash generation. Infrastructure economics and financing discipline are now as important as accelerator deployment counts.",
+      "trend_statement": "AI cloud commercialization is accelerating, but its physical infrastructure buildout is imposing growing near-term capital and free-cash-flow pressure.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Amazon.com third-quarter 2026 earnings release",
+          "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+          "source_type": "primary-company-earnings-release",
+          "published_at": "2026-10-29"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "enabling-infrastructure"
+      ]
+    },
+    {
+      "rank": 2,
+      "finding_id": "intel-q3-ai-server-growth-pc-supply-disruption-2026-10-29",
+      "event_key": "intel-q3-2026-data-center-growth-pc-fab-disruption",
+      "headline": "Intel data-center revenue rises 78% while manufacturing disruption and weak PCs constrain near-term outlook",
+      "summary": "Intel reported Q3 Data Center and AI revenue of $7.3 billion, up 78% year over year, versus Client Computing and Physical AI revenue of $8.1 billion, down 5%. Its Q4 revenue guidance of $15.0–16.0 billion signals near-term weakness. Intel cited strong Xeon demand and the need to unlock supply; Reuters additionally reported a two-week shutdown at Intel's Israeli manufacturing site after an October incident, with an estimated $600 million revenue impact across two quarters. This estimate is not a realized loss.",
+      "why_it_matters": "Divergence between server demand and PC demand, combined with manufacturing interruptions, shows that semiconductor supply constraints can persist even when AI demand is strong. The factory incident is a negative execution signal rather than evidence of weak AI-server demand.",
+      "trend_statement": "AI server computing remains a strong growth segment, while semiconductor manufacturing resilience and client-market softness are constraining near-term delivery.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Intel third-quarter 2026 financial results",
+          "url": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results",
+          "source_type": "primary-company-earnings-release",
+          "published_at": "2026-10-29"
+        },
+        {
+          "title": "Reuters report on Intel manufacturing disruption and outlook",
+          "url": "https://www.reuters.com/business/intel-signals-slower-growth-pc-market-remains-under-pressure-2026-10-29/",
+          "source_type": "secondary-independent-reporting",
+          "published_at": "2026-10-29"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "advanced-manufacturing"
+      ]
+    },
+    {
+      "rank": 3,
+      "finding_id": "cohere-canada-series-e-sovereign-ai-financing-2026-10-29",
+      "event_key": "cohere-2026-series-e-canadian-sovereign-ai-financing",
+      "headline": "Cohere announces initial close of a C$7 billion-targeted round with up to C$1.6 billion Canadian public equity",
+      "summary": "Cohere announced the initial close of a Series E financing targeting up to C$7 billion at a proposed C$35.7 billion valuation, led by companies of Schwarz Group and including strategic investors. Canada committed to invest up to C$1.6 billion in stages; Cohere committed to at least C$1.7 billion of additional Canadian computing infrastructure by 2030 and at least 1,000 technical jobs. The full financing target has not been raised and the planned infrastructure has not been built.",
+      "why_it_matters": "Public and private capital is being mobilized to establish a sovereign enterprise-AI supplier with regional computing capacity and regulated-sector distribution. The initial close is a completed financing milestone, while total proceeds, construction and commercial returns remain contingent.",
+      "trend_statement": "Sovereign AI commercialization is attracting large strategic and government equity commitments linked to regional compute infrastructure.",
+      "material_update_from": null,
+      "source_links": [
+        {
+          "title": "Cohere Series E initial close and C$7 billion target",
+          "url": "https://www.prnewswire.com/news-releases/cohere-announces-series-e-fundraise-targeting-cad-7-billion-to-meet-surging-global-demand-for-secure-sovereign-ai-302923951.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-29"
+        },
+        {
+          "title": "Canadian government equity investment commitment to Cohere",
+          "url": "https://www.pm.gc.ca/en/news/news-releases/2026/10/29/canada-announces-landmark-investment-cohere-scale-secure-sovereign-ai",
+          "source_type": "primary-government-announcement",
+          "published_at": "2026-10-29"
+        }
+      ],
+      "category_ids": [
+        "ai-computing",
+        "enabling-infrastructure"
+      ]
+    }
+  ],
+  "category_assessments": [
+    {
+      "category_id": "ai-computing",
+      "category_name": "AI and Computing",
+      "direction": "up",
+      "velocity_score": 2,
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "evidence_summary": "Amazon AWS grows 39.3% to $46 billion while AI infrastructure spending drives negative free cash flow",
+          "finding_id": "amazon-q3-aws-growth-ai-free-cash-flow-2026-10-29",
+          "source_url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+          "source_type": "primary-company-earnings-release",
+          "published_at": "2026-10-29",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Intel data-center revenue rises 78% while manufacturing disruption and weak PCs constrain near-term outlook",
+          "finding_id": "intel-q3-ai-server-growth-pc-supply-disruption-2026-10-29",
+          "source_url": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results",
+          "source_type": "primary-company-earnings-release",
+          "published_at": "2026-10-29",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Cohere announces initial close of a C$7 billion-targeted round with up to C$1.6 billion Canadian public equity",
+          "finding_id": "cohere-canada-series-e-sovereign-ai-financing-2026-10-29",
+          "source_url": "https://www.prnewswire.com/news-releases/cohere-announces-series-e-fundraise-targeting-cad-7-billion-to-meet-surging-global-demand-for-secure-sovereign-ai-302923951.html",
+          "source_type": "primary-company-announcement",
+          "published_at": "2026-10-29",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "AWS revenue grew 39.3%, Intel's data-center and AI segment grew 78%, and Cohere reached an initial strategic financing close. These support strong commercial demand, although infrastructure financing and supply bottlenecks persist.",
+      "compared_to_run_id": "technology-trends-2026-10-29",
+      "assessed_at": "2026-10-30T07:59:15-07:00"
+    },
+    {
+      "category_id": "aerospace-space",
+      "category_name": "Aerospace and Space",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.38,
+      "evidence": [],
+      "justification": "No independently verified development in this category cleared the materiality threshold in the observation window; unknown is not stagnation.",
+      "compared_to_run_id": "technology-trends-2026-10-29",
+      "assessed_at": "2026-10-30T07:59:15-07:00"
+    },
+    {
+      "category_id": "robotics-autonomy",
+      "category_name": "Robotics and Autonomy",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.38,
+      "evidence": [],
+      "justification": "No independently verified development in this category cleared the materiality threshold in the observation window; unknown is not stagnation.",
+      "compared_to_run_id": "technology-trends-2026-10-29",
+      "assessed_at": "2026-10-30T07:59:15-07:00"
+    },
+    {
+      "category_id": "advanced-manufacturing",
+      "category_name": "Advanced Manufacturing",
+      "direction": "down",
+      "velocity_score": -1,
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "evidence_summary": "Intel's manufacturing interruption and server-chip supply constraints impede near-term deliveries.",
+          "finding_id": "intel-q3-ai-server-growth-pc-supply-disruption-2026-10-29",
+          "source_url": "https://www.reuters.com/business/intel-signals-slower-growth-pc-market-remains-under-pressure-2026-10-29/",
+          "source_type": "secondary-independent-reporting",
+          "published_at": "2026-10-29",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "An Israeli fab interruption and reported supply constraints are a negative execution signal; this does not imply a broad decline in advanced manufacturing investment.",
+      "compared_to_run_id": "technology-trends-2026-10-29",
+      "assessed_at": "2026-10-30T07:59:15-07:00"
+    },
+    {
+      "category_id": "energy",
+      "category_name": "Energy",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.38,
+      "evidence": [],
+      "justification": "No independently verified development in this category cleared the materiality threshold in the observation window; unknown is not stagnation.",
+      "compared_to_run_id": "technology-trends-2026-10-29",
+      "assessed_at": "2026-10-30T07:59:15-07:00"
+    },
+    {
+      "category_id": "transportation",
+      "category_name": "Transportation",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.38,
+      "evidence": [],
+      "justification": "No independently verified development in this category cleared the materiality threshold in the observation window; unknown is not stagnation.",
+      "compared_to_run_id": "technology-trends-2026-10-29",
+      "assessed_at": "2026-10-30T07:59:15-07:00"
+    },
+    {
+      "category_id": "biotech",
+      "category_name": "Biotechnology",
+      "direction": "unknown",
+      "velocity_score": 0,
+      "confidence": 0.38,
+      "evidence": [],
+      "justification": "No independently verified development in this category cleared the materiality threshold in the observation window; unknown is not stagnation.",
+      "compared_to_run_id": "technology-trends-2026-10-29",
+      "assessed_at": "2026-10-30T07:59:15-07:00"
+    },
+    {
+      "category_id": "enabling-infrastructure",
+      "category_name": "Enabling Infrastructure",
+      "direction": "flat",
+      "velocity_score": 0,
+      "confidence": 0.74,
+      "evidence": [
+        {
+          "evidence_summary": "AWS revenue and infrastructure investment expand, but Amazon reports a $42.4B trailing free-cash-flow outflow.",
+          "finding_id": "amazon-q3-aws-growth-ai-free-cash-flow-2026-10-29",
+          "source_url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+          "source_type": "primary-company-earnings-release",
+          "published_at": "2026-10-29",
+          "reference_run_id": null
+        },
+        {
+          "evidence_summary": "Canada commits staged equity for Cohere and Cohere commits future Canadian compute infrastructure.",
+          "finding_id": "cohere-canada-series-e-sovereign-ai-financing-2026-10-29",
+          "source_url": "https://www.pm.gc.ca/en/news/news-releases/2026/10/29/canada-announces-landmark-investment-cohere-scale-secure-sovereign-ai",
+          "source_type": "primary-government-announcement",
+          "published_at": "2026-10-29",
+          "reference_run_id": null
+        }
+      ],
+      "justification": "Strong infrastructure demand and new financing commitments are offset by significant cash-flow pressure and unbuilt future capacity. The mixed evidence does not support a clear net direction.",
+      "compared_to_run_id": "technology-trends-2026-10-29",
+      "assessed_at": "2026-10-30T07:59:15-07:00"
+    }
+  ]
+}
